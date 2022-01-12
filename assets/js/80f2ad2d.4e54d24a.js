@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkblog=self.webpackChunkblog||[]).push([[886],{1278:function(l){l.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"/blog/tags/fullstack","name":"fullstack","count":1,"permalink":"/blog/tags/fullstack"}')}}]);
