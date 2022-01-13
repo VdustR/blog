@@ -103,6 +103,7 @@ const config = {
           src: "https://vdustr.github.io/brand/2022-01/logo.svg",
         },
         items: navbarItems,
+        hideOnScroll: true,
       },
       footer: {
         style: "dark",
