@@ -36,6 +36,6 @@ tags:
 
 <https://github.com/VdustR/brand/tree/main/2022-01>
 
-## LICENSE
+## License
 
 CC0
