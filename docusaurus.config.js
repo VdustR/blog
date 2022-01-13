@@ -63,7 +63,7 @@ const config = {
   baseUrl: "/blog/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
+  favicon: "https://vdustr.github.io/brand/2022-01/favicon.ico",
   i18n: {
     locales: ["zh-Hant"],
     defaultLocale: "zh-Hant",
@@ -90,6 +90,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      image: "https://vdustr.github.io/brand/2022-01/ogimage.png",
       colorMode: {
         defaultMode: "dark",
         disableSwitch: true,
@@ -99,13 +100,19 @@ const config = {
         title,
         logo: {
           alt: "ViPro's Blog",
-          src: "img/logo.svg",
+          src: "https://vdustr.github.io/brand/2022-01/logo.svg",
         },
         items: navbarItems,
       },
       footer: {
         style: "dark",
         links,
+        logo: {
+          alt: "ViPro's Blog",
+          src: "https://vdustr.github.io/brand/2022-01/logo.svg",
+          height: 32,
+          width: 32,
+        },
         copyright: `Copyright © 2022-${new Date().getFullYear()} VdustR, Inc. Built with Docusaurus.`,
       },
       prism: {
