@@ -65,8 +65,8 @@ const config = {
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
   i18n: {
-    locales: ["zh-hant"],
-    defaultLocale: "zh-hant",
+    locales: ["zh-Hant"],
+    defaultLocale: "zh-Hant",
   },
 
   presets: [
