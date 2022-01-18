@@ -59,7 +59,7 @@ links.forEach(({ items }) => {
 const config = {
   title,
   tagline: "我隨便寫寫, 客官就隨意看看",
-  url: "https://vdustr.github.io/",
+  url: "https://vdustr.github.io",
   baseUrl: "/blog/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
