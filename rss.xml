@@ -4,9 +4,44 @@
         <title>ViPro's Blog Blog</title>
         <link>https://vdustr.github.io/blog/</link>
         <description>ViPro's Blog Blog</description>
-        <lastBuildDate>Thu, 13 Jan 2022 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 27 Jan 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[HTML To Svelte]]></title>
+            <link>https://vdustr.github.io/blog/2022/01/27/html-to-svelte</link>
+            <guid>/2022/01/27/html-to-svelte</guid>
+            <pubDate>Thu, 27 Jan 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[在先前寫的 Example for Svelte + TS + Vite + MDsveX 時，存在使用 shiki 將 code 轉為 html ，再將 html 作為 svelte component 使用的需求……]]></description>
+            <content:encoded><![CDATA[<p><img src="https://vdustr.github.io/asset-2022/01-27-html-to-svelte/og.png" alt="HTML To Svelte"/></p><p>在先前寫的 <a href="../../../2021/12/25/example-vite-svelte-markdown.md">Example for Svelte + TS + Vite + MDsveX</a> 時，存在使用 <a href="https://github.com/shikijs/shiki">shiki</a> 將 code 轉為 html ， <a href="https://github.com/VdustR/example-vite-svelte-markdown/blob/2f218cd/vite.config.js#L14">再將 html 作為 svelte component 使用</a> 的需求……</p><p>由於 shiki 產出的結果就是一堆 <code>&lt;span /&gt;</code> 自然我不太需要擔心 html attributes ， 當時的想法是只要將 html tags 的 innerText 都強制轉成 svelte 的字串就好了， 於是使用了這樣的方法， 讓他使用 svelte element ：</p><pre><code class="language-ts">/**
+ * Prevent removing leading and tailing spaces.
+ * Transform `&lt;div&gt; foo &lt;/div&gt;` into `&lt;div&gt;{&#x27; foo &#x27;}&lt;/div&gt;`
+ * @param {string} html
+ */
+function saveSvelteHtmlText(html) {
+  return html.replace(/&gt;( *[^&lt;\n\r]+ *)&lt;/g, (match) =&gt; {
+    const text = match.substring(1, match.length - 1);
+    /**
+     * We don&#x27;t need escape text here but we have to transform it into a svelte
+     * string.
+     *
+     * For example:
+     *   &lt;div&gt; &amp;lt;div&amp;gt; &lt;/div&gt;
+     *   should be transformed to
+     *   &lt;div&gt;{&quot; &lt;div&gt; &quot;}&lt;/div&gt;
+     */
+    const unescapeText = unescape(text);
+    return &#x27;&gt;{&quot;&#x27; + unescapeText.replace(/&quot;/g, &#x27;\\&quot;&#x27;) + &#x27;&quot;}&lt;&#x27;;
+  });
+}
+</code></pre><p>本來還覺得因為是直接使用正規而不是使用 parser 一直感到很不安，還寫了一堆註解說明，後來想想既然都是 html 了為什麼不直接用 svelte 原生的 <a href="https://svelte.dev/docs#template-syntax-html"><code>{@html ...}</code></a> 就好了？</p><pre><code class="language-ts">/**
+ * @param {string} html
+ */
+function htmlToSvelte(html) {
+  return `{@html \`${html.replace(/`/g, &quot;\\`&quot;)}\`}`;
+}
+</code></pre><p>同理 React 也可以使用 <a href="https://reactjs.org/docs/dom-elements.html#dangerouslysetinnerhtml"><code>dangerouslySetInnerHTML</code></a> ， Vue 則使用 <a href="https://vuejs.org/v2/guide/syntax.html#Raw-HTML"><code>v-html</code></a>。</p><p>原來的 repo 也修正了， <a href="https://github.com/VdustR/example-vite-svelte-markdown/commit/dad32b4d2034e12d996f2f3a5ddcbb7019b352c1">commit 請看這裡</a>。</p><p>真的是有夠 87 🤪</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[新 logo]]></title>
             <link>https://vdustr.github.io/blog/2022/01/13/new-logo</link>
