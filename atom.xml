@@ -38,9 +38,9 @@ function saveSvelteHtmlText(html) {
  * @param {string} html
  */
 function htmlToSvelte(html) {
-  return `{@html \`${html.replace(/`/g, &quot;\\`&quot;)}\`}`;
+  return `{@html \`${html.replace(/([`$])/g, &quot;\\$1&quot;)}\`}`;
 }
-</code></pre><p>同理 React 也可以使用 <a href="https://reactjs.org/docs/dom-elements.html#dangerouslysetinnerhtml"><code>dangerouslySetInnerHTML</code></a> ， Vue 則使用 <a href="https://vuejs.org/v2/guide/syntax.html#Raw-HTML"><code>v-html</code></a>。</p><p>原來的 repo 也修正了， <a href="https://github.com/VdustR/example-vite-svelte-markdown/commit/4ebcef2">commit 請看這裡</a>。</p><p>真的是有夠 87 🤪</p>]]></content>
+</code></pre><p>同理 React 也可以使用 <a href="https://reactjs.org/docs/dom-elements.html#dangerouslysetinnerhtml"><code>dangerouslySetInnerHTML</code></a> ， Vue 則使用 <a href="https://vuejs.org/v2/guide/syntax.html#Raw-HTML"><code>v-html</code></a>。</p><p>原來的 repo 也修正了， <a href="https://github.com/VdustR/example-vite-svelte-markdown/commit/c790109">commit 請看這裡</a>。</p><p>真的是有夠 87 🤪</p>]]></content>
         <author>
             <name>ViPro</name>
             <uri>https://VdustR.github.io/</uri>
