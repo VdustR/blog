@@ -4,9 +4,17 @@
         <title>ViPro's Blog Blog</title>
         <link>https://vdustr.github.io/blog/</link>
         <description>ViPro's Blog Blog</description>
-        <lastBuildDate>Thu, 27 Jan 2022 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 08 Feb 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Forked rollup-plugin-rename-extensions]]></title>
+            <link>https://vdustr.github.io/blog/2022/02/08/forked-rollup-plugin-rename-extensions</link>
+            <guid>/2022/02/08/forked-rollup-plugin-rename-extensions</guid>
+            <pubDate>Tue, 08 Feb 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[在打包 library 時我並不喜歡使用像 tsdx 等 bundle 的方式，而是比較喜歡 preserveModules 保留原始結構，使用上能有更大的彈性。]]></description>
+            <content:encoded><![CDATA[<p>在打包 library 時我並不喜歡使用像 <a href="https://github.com/jaredpalmer/tsdx">tsdx</a> 等 bundle 的方式，而是比較喜歡 <a href="https://rollupjs.org/guide/en/#outputpreservemodules">preserveModules</a> 保留原始結構，使用上能有更大的彈性。</p><p><img src="https://vdustr.github.io/asset-2022/02-08-forked-rollup-plugin-rename-extensions/ogimage.png" alt="Forked rollup-plugin-rename-extensions"/></p><p>目前為止 <a href="https://github.com/ezolenko/rollup-plugin-typescript2"><code>rollup-plugin-typescript2</code></a> 是我認為打包效果較好的工具，可以保留原始結構，也能生成結構一致的 <code>.d.ts</code>，並且對 <a href="https://github.com/Microsoft/tslib">tslib</a> 進行 tree shaking 並放到 <code>_virtual/_tslib.js</code>。</p><p>基於某些工具對 esm 支援仍不是很完美，我想同時打包 .js (esm) 和 .cjs 時，找到了個不錯的 <a href="https://github.com/GiG/rollup-plugin-rename-extensions">@betit/rollup-plugin-rename-extensions</a> 可以在 rollup build 時同時對副檔名進行調整，遺憾的是其依賴的 <a href="https://github.com/rollup/plugins/blob/6cd15b9/packages/pluginutils/src/createFilter.ts#L48">@rollup/pluginutils createFilter</a> 並不支援 <code>\0tslib.js</code> 這種 <code>facadeModuleId</code> ，或是說根本是直接將之排除在外了，因此我 fork 了 <a href="https://github.com/vdustr/rollup-plugin-rename-extensions">@vdustr/rollup-plugin-rename-extensions</a> 並加了一個 match option 來直接比對原始的 <code>facadeModuleId</code> 。</p><p>實際使用狀況的話可以參考<a href="https://github.com/VdustR/likftc/blob/59b66c2/script/rollup.config.js#L43">這裡</a>。</p><p>最後，我認為這只是暫時性的解法，目前只是先讓他能達到預期的效果而已，應該有更好更簡單的做法，歡迎大家來 <a href="http://ganhuaking.tw/">Discord 群</a> 一起交流。</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[HTML To Svelte]]></title>
             <link>https://vdustr.github.io/blog/2022/01/27/html-to-svelte</link>
