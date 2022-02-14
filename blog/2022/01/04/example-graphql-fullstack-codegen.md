@@ -1,6 +1,6 @@
 ---
 description: This example will show you how to dev with typescript fullstack with GraphQL Code Generator.
-image: https://vdustr.github.io/asset-2022/01-04-example-graphql-fullstack-codegen/ogimage.png
+image: https://vdustr.dev/asset-2022/01-04-example-graphql-fullstack-codegen/ogimage.png
 authors: [ViPro]
 tags:
   - react

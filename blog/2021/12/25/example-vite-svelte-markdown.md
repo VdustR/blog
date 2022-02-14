@@ -1,6 +1,6 @@
 ---
 description: This is an example for importing Markdown files as Svelte components.
-image: https://vdustr.github.io/asset-2021/12-25-example-vite-svelte-markdown/ogImage.png
+image: https://vdustr.dev/asset-2021/12-25-example-vite-svelte-markdown/ogImage.png
 authors: [ViPro]
 tags:
   - markdown

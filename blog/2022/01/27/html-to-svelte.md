@@ -1,6 +1,6 @@
 ---
 description: 在先前寫的 Example for Svelte + TS + Vite + MDsveX 時，存在使用 shiki 將 code 轉為 html ，再將 html 作為 svelte component 使用的需求……
-image: https://vdustr.github.io/asset-2022/01-27-html-to-svelte/og.png
+image: https://vdustr.dev/asset-2022/01-27-html-to-svelte/og.png
 authors: [ViPro]
 tags:
   - svelte
@@ -11,7 +11,7 @@ tags:
 
 # HTML To Svelte
 
-![HTML To Svelte](https://vdustr.github.io/asset-2022/01-27-html-to-svelte/og.png)
+![HTML To Svelte](https://vdustr.dev/asset-2022/01-27-html-to-svelte/og.png)
 
 在先前寫的 [Example for Svelte + TS + Vite + MDsveX](../../../2021/12/25/example-vite-svelte-markdown.md) 時，存在使用 [shiki](https://github.com/shikijs/shiki) 將 code 轉為 html ， [再將 html 作為 svelte component 使用](https://github.com/VdustR/example-vite-svelte-markdown/blob/2f218cd/vite.config.js#L14) 的需求……
 

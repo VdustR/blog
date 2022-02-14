@@ -1,6 +1,6 @@
 ---
 description: 臨時 fork 了 一個 repo 解決 rollup-plugin-typescript2 + @betit/rollup-plugin-rename-extensions 無法並存 tslib.js 和 tslib.cjs 的問題。
-image: https://vdustr.github.io/asset-2022/02-08-forked-rollup-plugin-rename-extensions/ogimage.png
+image: https://vdustr.dev/asset-2022/02-08-forked-rollup-plugin-rename-extensions/ogimage.png
 authors: [ViPro]
 tags:
   - rollup
@@ -15,7 +15,7 @@ tags:
 
 臨時 fork 了 一個 repo 解決 rollup-plugin-typescript2 + @betit/rollup-plugin-rename-extensions 無法並存 tslib.js 和 tslib.cjs 的問題。
 
-![Forked rollup-plugin-rename-extensions](https://vdustr.github.io/asset-2022/02-08-forked-rollup-plugin-rename-extensions/ogimage.png)
+![Forked rollup-plugin-rename-extensions](https://vdustr.dev/asset-2022/02-08-forked-rollup-plugin-rename-extensions/ogimage.png)
 
 <!--truncate-->
 

@@ -1,6 +1,6 @@
 ---
 description: 繼 2019/01 之後, 久違地更新了 Logo
-image: https://vdustr.github.io/brand/2022-01/ogimage.png
+image: https://vdustr.dev/brand/2022-01/ogimage.png
 authors: [ViPro]
 tags:
   - logo
@@ -8,7 +8,7 @@ tags:
 
 # 新 logo
 
-![Round Icon](https://vdustr.github.io/brand/2022-01/round.png)
+![Round Icon](https://vdustr.dev/brand/2022-01/round.png)
 
 繼 2019/01 之後, 久違地更新了 Logo
 
