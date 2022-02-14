@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://vdustr.github.io/blog/</id>
+    <id>https://vdustr.dev/blog/</id>
     <title>ViPro's Blog Blog</title>
     <updated>2022-02-08T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://vdustr.github.io/blog/"/>
+    <link rel="alternate" href="https://vdustr.dev/blog/"/>
     <subtitle>ViPro's Blog Blog</subtitle>
-    <icon>https://vdustr.github.io/blog/https://vdustr.github.io/brand/2022-01/favicon.ico</icon>
+    <icon>https://vdustr.dev/blog/https://vdustr.dev/brand/2022-01/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Forked rollup-plugin-rename-extensions]]></title>
         <id>/2022/02/08/forked-rollup-plugin-rename-extensions</id>
-        <link href="https://vdustr.github.io/blog/2022/02/08/forked-rollup-plugin-rename-extensions"/>
+        <link href="https://vdustr.dev/blog/2022/02/08/forked-rollup-plugin-rename-extensions"/>
         <updated>2022-02-08T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[臨時 fork 了 一個 repo 解決 rollup-plugin-typescript2 + @betit/rollup-plugin-rename-extensions 無法並存 tslib.js 和 tslib.cjs 的問題。]]></summary>
         <content type="html"><![CDATA[<p>臨時 fork 了 一個 repo 解決 rollup-plugin-typescript2 + @betit/rollup-plugin-rename-extensions 無法並存 tslib.js 和 tslib.cjs 的問題。</p><p><img src="https://vdustr.github.io/asset-2022/02-08-forked-rollup-plugin-rename-extensions/ogimage.png" alt="Forked rollup-plugin-rename-extensions"/></p><p>在打包 library 時我並不喜歡使用像 <a href="https://github.com/jaredpalmer/tsdx">tsdx</a> 等 bundle 的方式，而是比較喜歡 <a href="https://rollupjs.org/guide/en/#outputpreservemodules">preserveModules</a> 保留原始結構，使用上能有更大的彈性。</p><p>目前為止 <a href="https://github.com/ezolenko/rollup-plugin-typescript2"><code>rollup-plugin-typescript2</code></a> 是我認為打包效果較好的工具，可以保留原始結構，也能生成結構一致的 <code>.d.ts</code>，並且對 <a href="https://github.com/Microsoft/tslib">tslib</a> 進行 tree shaking 並放到 <code>_virtual/_tslib.js</code>。</p><p>基於某些工具對 esm 支援仍不是很完美，我想同時打包 .js (esm) 和 .cjs 時，找到了個不錯的 <a href="https://github.com/GiG/rollup-plugin-rename-extensions">@betit/rollup-plugin-rename-extensions</a> 可以在 rollup build 時同時對副檔名進行調整，遺憾的是其依賴的 <a href="https://github.com/rollup/plugins/blob/6cd15b9/packages/pluginutils/src/createFilter.ts#L48">@rollup/pluginutils createFilter</a> 並不支援 <code>\0tslib.js</code> 這種 <code>facadeModuleId</code> ，或是說根本是直接將之排除在外了，因此我 fork 了 <a href="https://github.com/vdustr/rollup-plugin-rename-extensions">@vdustr/rollup-plugin-rename-extensions</a> 並加了一個 match option 來直接比對原始的 <code>facadeModuleId</code> 。</p><p>實際使用狀況的話可以參考<a href="https://github.com/VdustR/likftc/blob/59b66c2/script/rollup.config.js#L43">這裡</a>。</p><p>最後，我認為這只是暫時性的解法，目前只是先讓他能達到預期的效果而已，應該有更好更簡單的做法，歡迎大家來 <a href="http://ganhuaking.tw/">Discord 群</a> 一起交流。</p>]]></content>
         <author>
             <name>ViPro</name>
-            <uri>https://VdustR.github.io/</uri>
+            <uri>https://vdustr.dev/</uri>
         </author>
     </entry>
     <entry>
         <title type="html"><![CDATA[HTML To Svelte]]></title>
         <id>/2022/01/27/html-to-svelte</id>
-        <link href="https://vdustr.github.io/blog/2022/01/27/html-to-svelte"/>
+        <link href="https://vdustr.dev/blog/2022/01/27/html-to-svelte"/>
         <updated>2022-01-27T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[在先前寫的 Example for Svelte + TS + Vite + MDsveX 時，存在使用 shiki 將 code 轉為 html ，再將 html 作為 svelte component 使用的需求……]]></summary>
-        <content type="html"><![CDATA[<p><img src="https://vdustr.github.io/asset-2022/01-27-html-to-svelte/og.png" alt="HTML To Svelte"/></p><p>在先前寫的 <a href="../../../2021/12/25/example-vite-svelte-markdown.md">Example for Svelte + TS + Vite + MDsveX</a> 時，存在使用 <a href="https://github.com/shikijs/shiki">shiki</a> 將 code 轉為 html ， <a href="https://github.com/VdustR/example-vite-svelte-markdown/blob/2f218cd/vite.config.js#L14">再將 html 作為 svelte component 使用</a> 的需求……</p><p>由於 shiki 產出的結果就是一堆 <code>&lt;span /&gt;</code> 自然我不太需要擔心 html attributes ，當時的想法是只要將 html tags 的 innerText 都強制轉成 svelte 的字串就好了，於是使用了這樣的方法，讓他使用 svelte element ：</p><pre><code class="language-ts">/**
+        <content type="html"><![CDATA[<p><img src="https://vdustr.dev/asset-2022/01-27-html-to-svelte/og.png" alt="HTML To Svelte"/></p><p>在先前寫的 <a href="../../../2021/12/25/example-vite-svelte-markdown.md">Example for Svelte + TS + Vite + MDsveX</a> 時，存在使用 <a href="https://github.com/shikijs/shiki">shiki</a> 將 code 轉為 html ， <a href="https://github.com/VdustR/example-vite-svelte-markdown/blob/2f218cd/vite.config.js#L14">再將 html 作為 svelte component 使用</a> 的需求……</p><p>由於 shiki 產出的結果就是一堆 <code>&lt;span /&gt;</code> 自然我不太需要擔心 html attributes ，當時的想法是只要將 html tags 的 innerText 都強制轉成 svelte 的字串就好了，於是使用了這樣的方法，讓他使用 svelte element ：</p><pre><code class="language-ts">/**
  * Prevent removing leading and tailing spaces.
  * Transform `&lt;div&gt; foo &lt;/div&gt;` into `&lt;div&gt;{&#x27; foo &#x27;}&lt;/div&gt;`
  * @param {string} html
@@ -55,61 +55,61 @@ function htmlToSvelte(html) {
 </code></pre><p>同理 React 也可以使用 <a href="https://reactjs.org/docs/dom-elements.html#dangerouslysetinnerhtml"><code>dangerouslySetInnerHTML</code></a> ， Vue 則使用 <a href="https://vuejs.org/v2/guide/syntax.html#Raw-HTML"><code>v-html</code></a>。</p><p>原來的 repo 也修正了， <a href="https://github.com/VdustR/example-vite-svelte-markdown/commit/c790109">commit 請看這裡</a>。</p><p>真的是有夠 87 🤪</p>]]></content>
         <author>
             <name>ViPro</name>
-            <uri>https://VdustR.github.io/</uri>
+            <uri>https://vdustr.dev/</uri>
         </author>
     </entry>
     <entry>
         <title type="html"><![CDATA[新 logo]]></title>
         <id>/2022/01/13/new-logo</id>
-        <link href="https://vdustr.github.io/blog/2022/01/13/new-logo"/>
+        <link href="https://vdustr.dev/blog/2022/01/13/new-logo"/>
         <updated>2022-01-13T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[繼 2019/01 之後, 久違地更新了 Logo]]></summary>
-        <content type="html"><![CDATA[<p><img src="https://vdustr.github.io/brand/2022-01/round.png" alt="Round Icon"/></p><p>繼 2019/01 之後, 久違地更新了 Logo</p><h2>Tech</h2><ul><li>Editors:<ul><li><a href="https://github.com/LibreSprite/LibreSprite">LibreSprite</a></li><li><a href="https://designer.gravit.io">Gravit</a></li></ul></li><li>Palette: db32</li><li>Font: <a href="https://github.com/TakWolf/ark-pixel-font">ark-pixel-12px-latin</a></li><li>Converters:<ul><li><a href="https://convertico.com">ConvertICO.com</a></li><li><a href="https://github.com/shrhdk/text-to-svg">text-to-svg</a></li><li><a href="https://github.com/kagof/pixel-perfect-svg">pixel-perfect-svg</a></li></ul></li></ul><p>另外 Docusaurus Palette 使用 <a href="https://swatcherapp.com">Swatcher</a>:</p><ul><li>h dif: -7</li><li>s dif: -10</li><li>b dif: 6</li></ul><h2>Source</h2><p><a href="https://github.com/VdustR/brand/tree/main/2022-01">https://github.com/VdustR/brand/tree/main/2022-01</a></p><h2>License</h2><p>CC0</p>]]></content>
+        <content type="html"><![CDATA[<p><img src="https://vdustr.dev/brand/2022-01/round.png" alt="Round Icon"/></p><p>繼 2019/01 之後, 久違地更新了 Logo</p><h2>Tech</h2><ul><li>Editors:<ul><li><a href="https://github.com/LibreSprite/LibreSprite">LibreSprite</a></li><li><a href="https://designer.gravit.io">Gravit</a></li></ul></li><li>Palette: db32</li><li>Font: <a href="https://github.com/TakWolf/ark-pixel-font">ark-pixel-12px-latin</a></li><li>Converters:<ul><li><a href="https://convertico.com">ConvertICO.com</a></li><li><a href="https://github.com/shrhdk/text-to-svg">text-to-svg</a></li><li><a href="https://github.com/kagof/pixel-perfect-svg">pixel-perfect-svg</a></li></ul></li></ul><p>另外 Docusaurus Palette 使用 <a href="https://swatcherapp.com">Swatcher</a>:</p><ul><li>h dif: -7</li><li>s dif: -10</li><li>b dif: 6</li></ul><h2>Source</h2><p><a href="https://github.com/VdustR/brand/tree/main/2022-01">https://github.com/VdustR/brand/tree/main/2022-01</a></p><h2>License</h2><p>CC0</p>]]></content>
         <author>
             <name>ViPro</name>
-            <uri>https://VdustR.github.io/</uri>
+            <uri>https://vdustr.dev/</uri>
         </author>
     </entry>
     <entry>
         <title type="html"><![CDATA[Pocket]]></title>
         <id>/2022/01/08/pocket</id>
-        <link href="https://vdustr.github.io/blog/2022/01/08/pocket"/>
+        <link href="https://vdustr.dev/blog/2022/01/08/pocket"/>
         <updated>2022-01-08T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[👀 Stay awhile and listen..]]></summary>
-        <content type="html"><![CDATA[<p><a href="https://vdustr.github.io/pocket"><img src="https://vdustr.github.io/asset-2022/01-08-pocket/og.png" alt="pocket"/></a></p><p>最近開始嘗試用 <a href="https://svelte.dev/">Svelte</a> 寫一些東西, 做了這個頁面, 主要是放一些 🔖 書籤和 <a href="https://github.com/VdustR?tab=stars">自己 ⭐ 的 Repositories</a> ， 方便搜尋用。</p><p>書籤的部分會陸續整理補上。</p><p>👉 <a href="https://vdustr.github.io/pocket">https://vdustr.github.io/pocket</a></p>]]></content>
+        <content type="html"><![CDATA[<p><a href="https://vdustr.dev/pocket"><img src="https://vdustr.dev/asset-2022/01-08-pocket/og.png" alt="pocket"/></a></p><p>最近開始嘗試用 <a href="https://svelte.dev/">Svelte</a> 寫一些東西, 做了這個頁面, 主要是放一些 🔖 書籤和 <a href="https://github.com/VdustR?tab=stars">自己 ⭐ 的 Repositories</a> ， 方便搜尋用。</p><p>書籤的部分會陸續整理補上。</p><p>👉 <a href="https://vdustr.dev/pocket">https://vdustr.dev/pocket</a></p>]]></content>
         <author>
             <name>ViPro</name>
-            <uri>https://VdustR.github.io/</uri>
+            <uri>https://vdustr.dev/</uri>
         </author>
     </entry>
     <entry>
         <title type="html"><![CDATA[A TypeScript Fullstack GraphQL CodeGen Example]]></title>
         <id>/2022/01/04/example-graphql-fullstack-codegen</id>
-        <link href="https://vdustr.github.io/blog/2022/01/04/example-graphql-fullstack-codegen"/>
+        <link href="https://vdustr.dev/blog/2022/01/04/example-graphql-fullstack-codegen"/>
         <updated>2022-01-04T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[This example will show you how to dev with typescript fullstack with GraphQL Code Generator.]]></summary>
         <content type="html"><![CDATA[<p>最近試了一下 GraphQL CodeGen 產生 react-query 和 resolver type, node server 可以保證回應的型態正確, react-query functions 更可以直接使用, 真ㄉ 4 超方便的 R~</p><p>可以參考這個簡單的範例: <a href="https://github.com/VdustR/example-graphql-fullstack-codegen">https://github.com/VdustR/example-graphql-fullstack-codegen</a></p>]]></content>
         <author>
             <name>ViPro</name>
-            <uri>https://VdustR.github.io/</uri>
+            <uri>https://vdustr.dev/</uri>
         </author>
     </entry>
     <entry>
         <title type="html"><![CDATA[Example for Svelte + TS + Vite + MDsveX]]></title>
         <id>/2021/12/25/example-vite-svelte-markdown</id>
-        <link href="https://vdustr.github.io/blog/2021/12/25/example-vite-svelte-markdown"/>
+        <link href="https://vdustr.dev/blog/2021/12/25/example-vite-svelte-markdown"/>
         <updated>2021-12-25T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[This is an example for importing Markdown files as Svelte components.]]></summary>
         <content type="html"><![CDATA[<p>想在 svelte 使用 markdown, 看到已經有大大開發了個套件叫 <a href="https://github.com/pngwn/mdsvex">MDsveX</a>, 然而在使用的時候仍然踩到了一些問題, 寫個簡單的範例紀錄一下, 大部分的問題和解決方法都在 vite.config.js 的註解裡:</p><p>👉 <a href="https://github.com/VdustR/example-vite-svelte-markdown">https://github.com/VdustR/example-vite-svelte-markdown</a></p>]]></content>
         <author>
             <name>ViPro</name>
-            <uri>https://VdustR.github.io/</uri>
+            <uri>https://vdustr.dev/</uri>
         </author>
     </entry>
     <entry>
         <title type="html"><![CDATA[Better Discord]]></title>
         <id>/2021/12/21/better-discord</id>
-        <link href="https://vdustr.github.io/blog/2021/12/21/better-discord"/>
+        <link href="https://vdustr.dev/blog/2021/12/21/better-discord"/>
         <updated>2021-12-21T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[讓 Discord 更美更好用的工具]]></summary>
         <content type="html"><![CDATA[<p>:::info
@@ -142,13 +142,13 @@ function htmlToSvelte(html) {
 </code></pre><p>擅長前端的朋友們也可以自己在 Discord 按 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd> ( Mac OS 則是 <kbd>Command⌘</kbd> + <kbd>Option</kbd> + <kbd>I</kbd> ) 來看 style。</p><p>最後結果就能變像這樣子啦~</p><p><img src="https://ganhuaking.tw/asset-2021/12-11-better-discord/final.png" alt="final"/></p><ul><li>Theme - <a href="https://betterdiscord.app/theme/Dark%20Matter">DarkMatter</a></li><li>Fonts<ul><li><a href="https://rubjo.github.io/victor-mono/">Victor Mono</a></li><li><a href="https://justfont.com/huninn/">open 粉圓</a></li></ul></li></ul><p>我自己有遇到 Enable Transparency 開啟時 <a href="https://docs.microsoft.com/en-us/windows/powertoys/">PowerToys</a> 的 <a href="https://docs.microsoft.com/en-us/windows/powertoys/fancyzones">FancyZones</a> 無法正確定位的小問題， 關掉就沒事了。</p><p>另外 Better Discord 也有他們自己的 <a href="https://discord.com/invite/0Tmfo5ZbORCRqbAd">Discord Server</a> 。</p>]]></content>
         <author>
             <name>ViPro</name>
-            <uri>https://VdustR.github.io/</uri>
+            <uri>https://vdustr.dev/</uri>
         </author>
     </entry>
     <entry>
         <title type="html"><![CDATA[Podman in WSL2]]></title>
         <id>/2021/09/20/podman-in-wsl2</id>
-        <link href="https://vdustr.github.io/blog/2021/09/20/podman-in-wsl2"/>
+        <link href="https://vdustr.dev/blog/2021/09/20/podman-in-wsl2"/>
         <updated>2021-09-20T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[3 分鐘 跟 podman 當好朋友]]></summary>
         <content type="html"><![CDATA[<p>3 分鐘 跟 podman 當好朋友</p><h2>Install WSL2</h2><p>👉 <a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">Windows Subsystem for Linux Installation Guide for Windows 10</a></p><h2>Install Ubuntu (Optional)</h2><p>👉 <a href="https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6">Get Ubuntu - Microsoft Store</a></p><h2>Install podman</h2><p>👉 <a href="https://www.redhat.com/sysadmin/podman-windows-wsl2">How to run Podman on Windows with WSL2</a></p><h2>Install podman-compose</h2><p>Install python3 and pip:</p><pre><code class="language-bash">sudo apt-get -y install python3 python3-venv python3-pip
@@ -169,7 +169,7 @@ $ sudo apt-get install fish
     <entry>
         <title type="html"><![CDATA[Migrate to Docusaurus v2]]></title>
         <id>/2021/04/01/move-to-docusaurus</id>
-        <link href="https://vdustr.github.io/blog/2021/04/01/move-to-docusaurus"/>
+        <link href="https://vdustr.dev/blog/2021/04/01/move-to-docusaurus"/>
         <updated>2021-04-01T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[This is my first post on Docusaurus 2.]]></summary>
         <content type="html"><![CDATA[<p>I migrated my site to Docusaurus v2.</p><p>剛好今天愚人節。之後會開始在這邊寫開發紀錄吧！</p>]]></content>
