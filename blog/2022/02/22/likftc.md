@@ -25,7 +25,7 @@ List item keys for transition components.
 
 支援 react, vue, svelte
 
-![likftc](https://vdustr.dev/asset-2022/02-22-likftc/ogimage.png)
+[![likftc](https://vdustr.dev/asset-2022/02-22-likftc/ogimage.png)](https://vdustr.dev/likftc/)
 
 <!--truncate-->
 
