@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkblog=self.webpackChunkblog||[]).push([[4609],{7454:function(l){l.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"/blog/tags/likftc","name":"likftc","count":1,"permalink":"/blog/tags/likftc"}')}}]);
