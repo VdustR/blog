@@ -130,7 +130,7 @@ Element Directives 無法輕易直接轉移到 Component (會直接被 svelte �
 
 另一個選擇就是改用 store，但因為也不能使用 [`$ prefix`](https://svelte.dev/docs#component-format-script-4-prefix-stores-with-$-to-access-their-values) ，寫起來相對費工。
 
-Vue 的 Reactivity Transform 因為有 compile `.js` / `.ts` 而且寫法就是原生的 js 所以就不用擔心這個問題，但個人認為 [Retaining Reactivity Across Function Boundaries](https://vuejs.org/guide/extras/reactivity-transform.html#retaining-reactivity-across-function-boundaries) 其實更難維護，所以 Vue 的話我可能會使用一般的 `ref()`， [Reactivity Transform](https://vuejs.org/guide/extras/reactivity-transform.html) 還是需要觀望一下。
+Vue 的 [Reactivity Transform](https://vuejs.org/guide/extras/reactivity-transform.html) 因為有 compile `.js` / `.ts` 而且寫法就是原生的 js 所以就不用擔心這個問題，但個人認為 [Retaining Reactivity Across Function Boundaries](https://vuejs.org/guide/extras/reactivity-transform.html#retaining-reactivity-across-function-boundaries) 其實更難維護，所以 Vue 的話我可能會使用一般的 `ref()`， [Reactivity Transform](https://vuejs.org/guide/extras/reactivity-transform.html) 還是需要觀望一下。
 
 ## 個人結論
 
