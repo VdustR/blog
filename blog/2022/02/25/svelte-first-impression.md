@@ -128,6 +128,8 @@ Element Directives 無法輕易直接轉移到 Component (會直接被 svelte �
 
 因為 Svelte compiler 並不支援 `.js` / `.ts`，所以 Svelte 的功能 (主要是 [`$:`](https://svelte.dev/docs#component-format-script-3-$-marks-a-statement-as-reactive) 和 [`$ prefix`](https://svelte.dev/docs#component-format-script-4-prefix-stores-with-$-to-access-their-values)) 並無法像 react 或 vue 那樣輕易無痛地將部分功能區塊輕易地抽出做成 custom hooks 。目前看到比較建議的做法 ([How to Implement Custom React Hooks in Svelte](https://gradientdescent.de/custom-hooks/#Mypreferredsolution)) 而我也認同的是使用 `let:` directive，如此一來就可以避免 `.js` 或 `.ts` 無法使用 Svelte 特殊語法的問題，但結構上其實還是不像 react / vue custom hooks 那麼漂亮，太複雜的情境可能會出現包很多層的狀況。
 
+另一個選擇就是改用 store，但因為也不能使用 [`$ prefix`](https://svelte.dev/docs#component-format-script-4-prefix-stores-with-$-to-access-their-values) ，寫起來相對費工。
+
 Vue 的 Reactivity Transform 因為有 compile `.js` / `.ts` 而且寫法就是原生的 js 所以就不用擔心這個問題，但個人認為 [Retaining Reactivity Across Function Boundaries](https://vuejs.org/guide/extras/reactivity-transform.html#retaining-reactivity-across-function-boundaries) 其實更難維護，所以 Vue 的話我可能會使用一般的 `ref()`， [Reactivity Transform](https://vuejs.org/guide/extras/reactivity-transform.html) 還是需要觀望一下。
 
 ## 個人結論
