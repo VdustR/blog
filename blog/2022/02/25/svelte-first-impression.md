@@ -31,7 +31,7 @@ tags:
 
 我自己在寫 React 的時候有一些特別在意的事:
 
-- Render 的時候會一直重複做多餘的事情，這點在 [Rich Harris](https://twitter.com/Rich_Harris) 的 [Rethinking reactivity](https://youtu.be/AdNJ3fydeao) 裡也有提到。這個問題 React 未來有機會透過 sformer 被解決 ([黃玄 - React without memo](https://youtu.be/lGEMwh32soc)) 。
+- Render 的時候會一直重複做多餘的事情，這點在 [Rich Harris](https://twitter.com/Rich_Harris) 的 [Rethinking reactivity](https://youtu.be/AdNJ3fydeao) 裡也有提到。這個問題 React 未來有機會透過 transformer 被解決 ([黃玄 - React without memo](https://youtu.be/lGEMwh32soc)) 。
 - 依賴 [eslint-plugin-react-hooks](https://github.com/facebook/react/tree/0dedfcc/packages/eslint-plugin-react-hooks) ，寫起來相對囉嗦。像是 `useEffect` 如果是要監聽特定幾個值是否改變，使用 usePrevious compare 效能就差，寫起來也醜；使用 `eslint-disable-next-line` 維護上就會比較麻煩，可能需求上有調整就會漏東漏西而產生 side effect ，而我也很討厭 disable eslint rules。
 
 如果要我推坑的話我會如何簡介 Svelte 3?
@@ -50,7 +50,7 @@ tags:
 - [`svelte/store`](https://svelte.dev/docs#run-time-svelte-store) 簡單好用。在 `.svelte` 裡也可以直接透過 [`$` prefix](https://svelte.dev/docs#component-format-script-4-prefix-stores-with-$-to-access-their-values) 的方式取值，非常直覺。
 - `derived()` 其實就像 `$:`。
 
-### 內建 spring animate /
+### 內建 Spring Animate / Transition
 
 內建 [FLIP](https://aerotwist.com/blog/flip-your-animations/) move [animate](https://svelte.dev/docs#run-time-svelte-animate) 和 [transition](https://svelte.dev/docs#run-time-svelte-transition)。
 
@@ -128,7 +128,7 @@ Element Directives 無法輕易直接轉移到 Component (會直接被 svelte �
 
 因為 Svelte compiler 並不支援 `.js` / `.ts`，所以 Svelte 的功能 (主要是 [`$:`](https://svelte.dev/docs#component-format-script-3-$-marks-a-statement-as-reactive) 和 [`$ prefix`](https://svelte.dev/docs#component-format-script-4-prefix-stores-with-$-to-access-their-values)) 並無法像 react 或 vue 那樣輕易無痛地將部分功能區塊輕易地抽出做成 custom hooks 。目前看到比較建議的做法 ([How to Implement Custom React Hooks in Svelte](https://gradientdescent.de/custom-hooks/#Mypreferredsolution)) 而我也認同的是使用 `let:` directive，如此一來就可以避免 `.js` 或 `.ts` 無法使用 Svelte 特殊語法的問題，但結構上其實還是不像 react / vue custom hooks 那麼漂亮，太複雜的情境可能會出現包很多層的狀況。
 
-Vue 的 Reactivity Transform 因為有 compile `.js` / `.ts` 而且寫法就是原生的 js 所以就不用擔心這個問題，但個人認為 [Retaining Reactivity Across Function Boundaries](https://vuejs.org/guide/extras/reactivity-sform.html#retaining-reactivity-across-function-boundaries) 其實更難維護，所以 Vue 的話我可能會使用一般的 `ref()`， [Reactivity Transform](https://vuejs.org/guide/extras/reactivity-transform.html) 還是需要觀望一下。
+Vue 的 Reactivity Transform 因為有 compile `.js` / `.ts` 而且寫法就是原生的 js 所以就不用擔心這個問題，但個人認為 [Retaining Reactivity Across Function Boundaries](https://vuejs.org/guide/extras/reactivity-transform.html#retaining-reactivity-across-function-boundaries) 其實更難維護，所以 Vue 的話我可能會使用一般的 `ref()`， [Reactivity Transform](https://vuejs.org/guide/extras/reactivity-transform.html) 還是需要觀望一下。
 
 ## 個人結論
 
