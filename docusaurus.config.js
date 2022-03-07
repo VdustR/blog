@@ -4,57 +4,6 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 const title = "ViPro's Blog";
 
-/** @type {import('@docusaurus/preset-classic').ThemeConfig["footer"]["links"]} */
-const links = [
-  {
-    title: "Links",
-    items: [
-      {
-        label: "About Me",
-        href: "//vdustr.dev",
-      },
-      {
-        label: "GitHub",
-        href: "//github.com/VdustR",
-      },
-      {
-        label: "Repositories",
-        href: "//github.com/VdustR?tab=repositories&q=archived%3Afalse+fork%3Afalse",
-      },
-      {
-        label: "Pocket",
-        href: "//vdustr.dev/pocket",
-      },
-    ],
-  },
-  {
-    title: "Community",
-    items: [
-      {
-        label: "Facebook",
-        href: "//fb.me/vdustr",
-      },
-      {
-        label: "Discord",
-        href: "//ganhuaking.tw",
-      },
-    ],
-  },
-];
-
-/** @type {import('@docusaurus/preset-classic').ThemeConfig["navbar"]["items"]} */
-const navbarItems = [];
-
-links.forEach(({ items }) => {
-  items.forEach(({ label, href }) => {
-    navbarItems.push({
-      label,
-      href,
-      position: "right",
-    });
-  });
-});
-
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title,
@@ -102,12 +51,61 @@ const config = {
           alt: "ViPro's Blog",
           src: "https://vdustr.dev/brand/2022-01/logo.svg",
         },
-        items: navbarItems,
+        items:
+          /** @type {import('@docusaurus/preset-classic').ThemeConfig["navbar"]["items"]} */
+          [
+            {
+              label: "ViPro Land",
+              href: "https://vdustr.dev",
+              position: "right",
+            },
+          ],
         hideOnScroll: true,
       },
       footer: {
         style: "dark",
-        links,
+        links:
+          /** @type {import('@docusaurus/preset-classic').ThemeConfig["footer"]["links"]} */
+          [
+            {
+              title: "Links",
+              items: [
+                {
+                  label: "About Me",
+                  href: "//vdustr.dev",
+                },
+                {
+                  label: "GitHub",
+                  href: "//github.com/VdustR",
+                },
+                {
+                  label: "Links",
+                  href: "//vdustr.dev/links",
+                },
+                {
+                  label: "Projects",
+                  href: "//vdustr.dev/projects",
+                },
+              ],
+            },
+            {
+              title: "Community",
+              items: [
+                {
+                  label: "Facebook",
+                  href: "//fb.vdustr.dev",
+                },
+                {
+                  label: "Twitter",
+                  href: "//t.vdustr.dev",
+                },
+                {
+                  label: "Discord",
+                  href: "//dc.vdustr.dev",
+                },
+              ],
+            },
+          ],
         logo: {
           alt: "ViPro's Blog",
           src: "https://vdustr.dev/brand/2022-01/logo.svg",
