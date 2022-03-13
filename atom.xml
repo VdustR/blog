@@ -2,11 +2,31 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://vdustr.dev/blog/</id>
     <title>ViPro's Blog Blog</title>
-    <updated>2022-02-25T00:00:00.000Z</updated>
+    <updated>2022-03-13T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://vdustr.dev/blog/"/>
     <subtitle>ViPro's Blog Blog</subtitle>
     <icon>https://vdustr.dev/blog/https://vdustr.dev/brand/2022-01/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[EOLs in Textarea]]></title>
+        <id>/2022/03/13/eols-in-textarea</id>
+        <link href="https://vdustr.dev/blog/2022/03/13/eols-in-textarea"/>
+        <updated>2022-03-13T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[雖然有點晚了，但最近才比較有空稍微試玩了一下，寫了兩個小 repo ，有些小小心得在這裡紀錄一下。]]></summary>
+        <content type="html"><![CDATA[<p>EOL (end of line) 在 textarea 中換行會被修改，</p><p><img src="https://vdustr.dev/asset-2022/03-13-eols-in-textarea/og.png" alt="EOLs in Textarea"></p><p>在 Textarea 中的 EOLs 都會被 format 為 <code>\n</code> (tested in chrome / firefox) ，而在 <a href="https://developer.mozilla.org/en-US/docs/Web/API/FormData" target="_blank" rel="noopener noreferrer"><code>FormData</code></a> 或 submit 後的 request 中為 <code>\r\n</code> 。</p><p>Demo:</p><iframe src="https://codesandbox.io/embed/eols-in-textarea-lzq9yo?fontsize=14&amp;hidenavigation=1&amp;theme=dark" style="width:100%;height:500px;border:0;border-radius:4px;overflow:hidden" title="EOLs in Textarea" allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking" sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"></iframe><p>此外 <code>\t</code> 及 <code>\u00A0</code>(nbsp) 並不會受到影響。</p><p>Reference: <a href="https://html.spec.whatwg.org/multipage/form-elements.html#the-textarea-element" target="_blank" rel="noopener noreferrer">https://html.spec.whatwg.org/multipage/form-elements.html#the-textarea-element</a></p>]]></content>
+        <author>
+            <name>ViPro</name>
+            <uri>https://vdustr.dev/</uri>
+        </author>
+        <category label="eol" term="eol"/>
+        <category label="textarea" term="textarea"/>
+        <category label="form" term="form"/>
+        <category label="formdata" term="formdata"/>
+        <category label="ajax" term="ajax"/>
+        <category label="request" term="request"/>
+        <category label="get" term="get"/>
+        <category label="post" term="post"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Svelte 3 個人初體驗心得]]></title>
         <id>/2022/02/25/svelte-first-impression</id>
