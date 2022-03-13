@@ -21,7 +21,7 @@ EOL (end of line) 在 textarea 中會被修改。
 
 <!--truncate-->
 
-在 Textarea 中的 EOLs 都會被 format 為 `\n` (tested in chrome / firefox) ，而在 [`FormData`](https://developer.mozilla.org/en-US/docs/Web/API/FormData) 或 submit 後的 request 中為 `\r\n` 。
+在 Textarea 中的 EOLs 都會被 format 為 `\n` (tested in chrome / firefox) ，而在 submit 後的 request 中為 `\r\n` 。
 
 Demo:
 
@@ -40,5 +40,21 @@ Demo:
 />
 
 此外 `\t` 及 `\u00A0`(nbsp) 並不會受到影響。
+
+```ts
+(() => {
+  const textarea = document.createElement("textarea");
+  textarea.value = "\r\n";
+  console.log(textarea.value === "\n");
+})();
+```
+
+```ts
+(() => {
+  const formData = new FormData();
+  formData.append("textarea", "\n");
+  console.log(formData.get("textarea") === "\n");
+})();
+```
 
 Reference: <https://html.spec.whatwg.org/multipage/form-elements.html#the-textarea-element>
