@@ -4,9 +4,21 @@
         <title>ViPro's Blog Blog</title>
         <link>https://vdustr.dev/blog/</link>
         <description>ViPro's Blog Blog</description>
-        <lastBuildDate>Sun, 13 Mar 2022 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 14 Mar 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[addEventListener() useCapture]]></title>
+            <link>https://vdustr.dev/blog/2022/03/14/add-event-listener-use-capture</link>
+            <guid>/2022/03/14/add-event-listener-use-capture</guid>
+            <pubDate>Mon, 14 Mar 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[稍微記錄一下 addEventListener useCapture 的效果。]]></description>
+            <content:encoded><![CDATA[<p>稍微記錄一下 <a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#usecapture" target="_blank" rel="noopener noreferrer"><code>addEventListener()</code> <code>useCapture</code></a> 的效果。</p><p><img src="https://vdustr.dev/asset-2022/03-14-add-event-listener-use-capture/og.png" alt="addEventListener() useCapture"></p><iframe src="https://codesandbox.io/embed/usecapture-8tdyr9?fontsize=14&amp;hidenavigation=1&amp;theme=dark" style="width:100%;height:500px;border:0;border-radius:4px;overflow:hidden" title="useCapture" allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking" sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"></iframe><p><code>useCapture</code> 為 <code>true</code> 的事件會先觸發，父層的 listener 較子層先觸發；結束了之後才會開始觸發 <code>useCapture</code> 為 <code>false</code> 的事件，子層的 listener 較父層先觸發。以上整串事件冒泡都可以透過 <code>event.stopPropagation()</code> 停止。</p><p>Reference: <a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#usecapture" target="_blank" rel="noopener noreferrer">https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#usecapture</a></p>]]></content:encoded>
+            <category>event</category>
+            <category>addEventListener</category>
+            <category>useCapture</category>
+            <category>propagation</category>
+        </item>
         <item>
             <title><![CDATA[EOLs in Textarea]]></title>
             <link>https://vdustr.dev/blog/2022/03/13/eols-in-textarea</link>
