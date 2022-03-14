@@ -65,7 +65,7 @@ FormData 本身不會改變值：
 
 ```ts
 (() => {
-  var xhttp = new XMLHttpRequest();
+  const xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function () {
     console.log(this.response); // "textarea": "\r\n\r\n\r\n"
   };
