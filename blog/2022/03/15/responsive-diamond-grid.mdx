@@ -1,0 +1,40 @@
+---
+description: Pure CSS responsive diamond grid layout.
+image: https://vdustr.dev/asset-2022/03-15-responsive-diamond-grid/og.png
+authors: [ViPro]
+tags:
+  - css
+  - rwd
+  - grid
+  - layout
+---
+
+# Responsive Diamond Grid 💎
+
+Pure CSS responsive diamond grid layout.
+
+![Responsive Diamond Grid 💎](https://vdustr.dev/asset-2022/03-15-responsive-diamond-grid/og.png)
+
+<!--truncate-->
+
+<iframe
+  src="https://codesandbox.io/embed/peaceful-lake-q72d4u?fontsize=14&hidenavigation=1&theme=dark"
+  style={{
+    width: "100%",
+    height: 500,
+    border: 0,
+    borderRadius: 4,
+    overflow: "hidden",
+  }}
+  title="Responsive Diamond Grid 💎"
+  allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+  sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+/>
+
+一堆數學。
+
+原本用 2 個 item 1 組，發現如果最後一行為奇數個時排版就會有問題，所以改成 4 個 1 組，用 2:1 的矩形佔位，這樣最後 1 組就能夠正常排列。
+
+💡 Issues:
+
+- container 窄於 1 組的寬度時 n + 2, n + 3, n 會溢位跑版。
