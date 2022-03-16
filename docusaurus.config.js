@@ -10,6 +10,7 @@ const config = {
   tagline: "我隨便寫寫, 客官就隨意看看",
   url: "https://vdustr.dev",
   baseUrl: "/blog/",
+  trailingSlash: true,
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "https://vdustr.dev/brand/2022-01/favicon.ico",
