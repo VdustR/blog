@@ -4,16 +4,28 @@
         <title>ViPro's Blog Blog</title>
         <link>https://vdustr.dev/blog/</link>
         <description>ViPro's Blog Blog</description>
-        <lastBuildDate>Wed, 16 Mar 2022 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 19 Mar 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Responsive Honeycomb Grid 🍯]]></title>
+            <link>https://vdustr.dev/blog/2022/03/19/responseive-honeycomb-grid</link>
+            <guid>/2022/03/19/responseive-honeycomb-grid</guid>
+            <pubDate>Sat, 19 Mar 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Pure CSS responsive circle grid layout.]]></description>
+            <content:encoded><![CDATA[<p>Pure CSS responsive honeycomb grid layout.</p><p><img src="https://vdustr.dev/asset-2022/03-19-responseive-honeycomb-grid/og.png" alt="Responsive Circle 🍯"></p><iframe src="https://codesandbox.io/embed/responsive-honeycomb-grid-1dg35m?fontsize=14&amp;hidenavigation=1&amp;theme=dark" style="width:100%;height:500px;border:0;border-radius:4px;overflow:hidden" title="Responsive Circle 🍯" allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking" sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"></iframe><p>同樣使用 <a href="/blog/2022/03/15/responsive-diamond-grid/">Responsive Diamond Grid</a> fork 出來調整。圖片的部分可以移除，也可以自訂背景或不使用背景。</p><p>六角形的定位其實反而比較好算，然後圖片其實是錯的只需要使用 4 個一組。</p>]]></content:encoded>
+            <category>css</category>
+            <category>rwd</category>
+            <category>grid</category>
+            <category>layout</category>
+        </item>
         <item>
             <title><![CDATA[Responsive Circle Grid 🔵]]></title>
             <link>https://vdustr.dev/blog/2022/03/16/responseive-circle-grid</link>
             <guid>/2022/03/16/responseive-circle-grid</guid>
             <pubDate>Wed, 16 Mar 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Pure CSS responsive circle grid layout.]]></description>
-            <content:encoded><![CDATA[<p>Pure CSS responsive circle grid layout.</p><p><img src="https://vdustr.dev/asset-2022/03-16-responsive-circle-grid/og.png" alt="Responsive Circle 🔵"></p><iframe src="https://codesandbox.io/embed/responsive-circle-grid-jsner3?fontsize=14&amp;hidenavigation=1&amp;theme=dark" style="width:100%;height:500px;border:0;border-radius:4px;overflow:hidden" title="Responsive Diamond Grid 💎" allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking" sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"></iframe><p>直接拿 <a href="/blog/2022/03/15/responsive-diamond-grid/">Responsive Diamond Grid</a> 稍微調整一下即完成。</p>]]></content:encoded>
+            <content:encoded><![CDATA[<p>Pure CSS responsive circle grid layout.</p><p><img src="https://vdustr.dev/asset-2022/03-16-responsive-circle-grid/og.png" alt="Responsive Circle 🔵"></p><iframe src="https://codesandbox.io/embed/responsive-circle-grid-jsner3?fontsize=14&amp;hidenavigation=1&amp;theme=dark" style="width:100%;height:500px;border:0;border-radius:4px;overflow:hidden" title="Responsive Circle Grid 🔵" allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking" sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"></iframe><p>直接拿 <a href="/blog/2022/03/15/responsive-diamond-grid/">Responsive Diamond Grid</a> 稍微調整一下即完成。</p>]]></content:encoded>
             <category>css</category>
             <category>rwd</category>
             <category>grid</category>

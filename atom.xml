@@ -2,18 +2,34 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://vdustr.dev/blog/</id>
     <title>ViPro's Blog Blog</title>
-    <updated>2022-03-16T00:00:00.000Z</updated>
+    <updated>2022-03-19T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://vdustr.dev/blog/"/>
     <subtitle>ViPro's Blog Blog</subtitle>
     <icon>https://vdustr.dev/blog/https://vdustr.dev/brand/2022-01/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Responsive Honeycomb Grid 🍯]]></title>
+        <id>/2022/03/19/responseive-honeycomb-grid</id>
+        <link href="https://vdustr.dev/blog/2022/03/19/responseive-honeycomb-grid"/>
+        <updated>2022-03-19T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Pure CSS responsive circle grid layout.]]></summary>
+        <content type="html"><![CDATA[<p>Pure CSS responsive honeycomb grid layout.</p><p><img src="https://vdustr.dev/asset-2022/03-19-responseive-honeycomb-grid/og.png" alt="Responsive Circle 🍯"></p><iframe src="https://codesandbox.io/embed/responsive-honeycomb-grid-1dg35m?fontsize=14&amp;hidenavigation=1&amp;theme=dark" style="width:100%;height:500px;border:0;border-radius:4px;overflow:hidden" title="Responsive Circle 🍯" allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking" sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"></iframe><p>同樣使用 <a href="/blog/2022/03/15/responsive-diamond-grid/">Responsive Diamond Grid</a> fork 出來調整。圖片的部分可以移除，也可以自訂背景或不使用背景。</p><p>六角形的定位其實反而比較好算，然後圖片其實是錯的只需要使用 4 個一組。</p>]]></content>
+        <author>
+            <name>ViPro</name>
+            <uri>https://vdustr.dev/</uri>
+        </author>
+        <category label="css" term="css"/>
+        <category label="rwd" term="rwd"/>
+        <category label="grid" term="grid"/>
+        <category label="layout" term="layout"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Responsive Circle Grid 🔵]]></title>
         <id>/2022/03/16/responseive-circle-grid</id>
         <link href="https://vdustr.dev/blog/2022/03/16/responseive-circle-grid"/>
         <updated>2022-03-16T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Pure CSS responsive circle grid layout.]]></summary>
-        <content type="html"><![CDATA[<p>Pure CSS responsive circle grid layout.</p><p><img src="https://vdustr.dev/asset-2022/03-16-responsive-circle-grid/og.png" alt="Responsive Circle 🔵"></p><iframe src="https://codesandbox.io/embed/responsive-circle-grid-jsner3?fontsize=14&amp;hidenavigation=1&amp;theme=dark" style="width:100%;height:500px;border:0;border-radius:4px;overflow:hidden" title="Responsive Diamond Grid 💎" allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking" sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"></iframe><p>直接拿 <a href="/blog/2022/03/15/responsive-diamond-grid/">Responsive Diamond Grid</a> 稍微調整一下即完成。</p>]]></content>
+        <content type="html"><![CDATA[<p>Pure CSS responsive circle grid layout.</p><p><img src="https://vdustr.dev/asset-2022/03-16-responsive-circle-grid/og.png" alt="Responsive Circle 🔵"></p><iframe src="https://codesandbox.io/embed/responsive-circle-grid-jsner3?fontsize=14&amp;hidenavigation=1&amp;theme=dark" style="width:100%;height:500px;border:0;border-radius:4px;overflow:hidden" title="Responsive Circle Grid 🔵" allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking" sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"></iframe><p>直接拿 <a href="/blog/2022/03/15/responsive-diamond-grid/">Responsive Diamond Grid</a> 稍微調整一下即完成。</p>]]></content>
         <author>
             <name>ViPro</name>
             <uri>https://vdustr.dev/</uri>
