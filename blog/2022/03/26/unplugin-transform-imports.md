@@ -25,7 +25,7 @@ A imports transform unplugin.
 
 ## Slow Startup in Development Environment
 
-之前有發生 [create-react-app](https://github.com/facebook/create-react-app) 啟動時間超長的狀況，經好友 [yezhi780625](https://github.com/yezhi780625) 調查在使用 [`mdi-material-ui`](https://github.com/TeamWertarbyte/mdi-material-ui) 的時候雖然使用 ESM 可以 tree shaking，但其實 webpack 在這之前還是會花大量時間載入和 bundle。 後來椰子也找到了 [MUI 的官網也有描述到相同的問題](https://mui.com/guides/minimizing-bundle-size/#development-environment) :
+之前有發生 [create-react-app](https://github.com/facebook/create-react-app) 啟動時間超長的狀況，經好友 [yezhi780625](https://github.com/yezhi780625) 調查在使用 [`mdi-material-ui`](https://github.com/TeamWertarbyte/mdi-material-ui) (特別講這個是因為它很大一包) 的時候雖然使用 ESM 可以 tree shaking，但其實 webpack 在這之前還是會花大量時間載入和 bundle。 後來椰子也找到了 [MUI 的官網也有描述到相同的問題](https://mui.com/guides/minimizing-bundle-size/#development-environment) :
 
 > Development bundles can contain the full library which can lead to slower startup times. This is especially noticeable if you import from @mui/icons-material. Startup times can be approximately 6x slower than without named imports from the top-level API.
 
