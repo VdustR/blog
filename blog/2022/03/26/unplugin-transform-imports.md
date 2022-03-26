@@ -92,7 +92,7 @@ import { merge } from "lodash";
 - [vite-vue](https://github.com/VdustR/unplugin-transform-imports/tree/d6cc11a/packages/demo-vite-vue)
 - [vite-svelte](https://github.com/VdustR/unplugin-transform-imports/tree/d6cc11a/packages/demo-vite-svelte)
 
-其中 craco 的範例下 `pnpm start` 的時間就能從 22427 ms 優化到 3313 ms (AMD Ryzen 9 5900HS) ； Distribution 的體積也從 1.6M 減少到 980K 。此外像上述的 [phosphor-react](https://github.com/phosphor-icons/phosphor-react) 也能在 IDE 正常取得 type 卻不影響 startup time 。
+其中 craco 的範例下 `pnpm start` 的時間就能從 22427 ms 優化到 3313 ms (AMD Ryzen 9 5900HS) ； Distribution 的體積也從 1.6M 減少到 980K 。此外像上述的 [phosphor-react](https://github.com/phosphor-icons/phosphor-react) 也能在 IDE 正常取得 type 卻能有更短的 startup time 。
 
 以下是 `unplugin-transform-imports` 的連結：
 
