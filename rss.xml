@@ -4,9 +4,22 @@
         <title>ViPro's Blog Blog</title>
         <link>https://vdustr.dev/blog/</link>
         <description>ViPro's Blog Blog</description>
-        <lastBuildDate>Wed, 30 Mar 2022 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 07 Apr 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[gruvbox.css 🎨]]></title>
+            <link>https://vdustr.dev/blog/2022/04/07/gruvbox-css</link>
+            <guid>/2022/04/07/gruvbox-css</guid>
+            <pubDate>Thu, 07 Apr 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[gruvbox css variables.]]></description>
+            <content:encoded><![CDATA[<p>gruvbox css variables.</p><blockquote><p>gruvbox is heavily inspired by badwolf, jellybeans and solarized.</p><p>Designed as a bright theme with pastel 'retro groove' colors and light/dark mode switching in the way of solarized. The main focus when developing gruvbox is to keep colors easily distinguishable, contrast enough and still pleasant for the eyes.</p></blockquote><p>👉 Check <a href="https://github.com/morhetz/gruvbox" target="_blank" rel="noopener noreferrer">gruvbox - Retro groove color scheme for Vim</a></p><p>滿喜歡這組色票就做了一個 css library 。</p><h2 class="anchor anchorWithHideOnScrollNavbar_XKru" id="links">Links<a class="hash-link" href="#links" title="標題的直接連結">​</a></h2><ul><li>🎨 gruvbox: <a href="https://github.com/morhetz/gruvbox" target="_blank" rel="noopener noreferrer">https://github.com/morhetz/gruvbox</a></li><li>💻 Repository: <a href="https://github.com/VdustR/gruvbox.css" target="_blank" rel="noopener noreferrer">https://github.com/VdustR/gruvbox.css</a></li><li>💾 NPM: <a href="https://www.npmjs.com/package/gruvbox.css" target="_blank" rel="noopener noreferrer">https://www.npmjs.com/package/gruvbox.css</a></li><li>📦 CodeSandbox: <a href="https://codesandbox.io/s/gruvbox-css-demo-mjyeyr" target="_blank" rel="noopener noreferrer">https://codesandbox.io/s/gruvbox-css-demo-mjyeyr</a></li></ul><h2 class="anchor anchorWithHideOnScrollNavbar_XKru" id="demo">Demo<a class="hash-link" href="#demo" title="標題的直接連結">​</a></h2><iframe src="https://codesandbox.io/embed/gruvbox-css-demo-mjyeyr?fontsize=14&amp;hidenavigation=1&amp;theme=dark" style="width:100%;height:500px;border:0;border-radius:4px;overflow:hidden" title="gruvbox.css Demo" allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking" sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"></iframe><p><a href="https://mjyeyr.csb.app/" target="_blank" rel="noopener noreferrer">👉 Open preview</a></p>]]></content:encoded>
+            <category>color</category>
+            <category>css</category>
+            <category>gruvbox</category>
+            <category>palette</category>
+            <category>theme</category>
+        </item>
         <item>
             <title><![CDATA[Aspect Ratio Calculator with Jotai 👻]]></title>
             <link>https://vdustr.dev/blog/2022/03/30/aspect-ratio-calculator</link>
