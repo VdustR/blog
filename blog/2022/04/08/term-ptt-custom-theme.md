@@ -75,3 +75,7 @@ Goph Graph Theme + [jf open 粉圓](https://github.com/justfont/open-huninn-font
 - [term-ptt-retro-theme](https://github.com/VdustR/term-ptt-retro-theme)
 
 有任何疑問或是建議也歡迎使用任何可以聯絡得到我的方式一起交流～ 發 issue 也 ok ～
+
+## Alternative
+
+- [Petingo/PTT-Theme](https://github.com/Petingo/PTT-Theme)
