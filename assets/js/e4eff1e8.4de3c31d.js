@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkblog=self.webpackChunkblog||[]).push([[8832],{1089:function(e){e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"/blog/tags/greasemonkey","name":"greasemonkey","count":1,"permalink":"/blog/tags/greasemonkey"}')}}]);

@@ -2,11 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://vdustr.dev/blog/</id>
     <title>ViPro's Blog Blog</title>
-    <updated>2022-04-07T00:00:00.000Z</updated>
+    <updated>2022-04-08T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://vdustr.dev/blog/"/>
     <subtitle>ViPro's Blog Blog</subtitle>
     <icon>https://vdustr.dev/blog/https://vdustr.dev/brand/2022-01/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[PTT Custom Theme 🎨]]></title>
+        <id>/2022/04/08/term-ptt-custom-theme</id>
+        <link href="https://vdustr.dev/blog/2022/04/08/term-ptt-custom-theme"/>
+        <updated>2022-04-08T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[自訂 term.ptt.cc 的主題。]]></summary>
+        <content type="html"><![CDATA[<p>自訂 <a href="https://term.ptt.cc" target="_blank" rel="noopener noreferrer">term.ptt.cc</a> 的主題。</p><p><img src="https://vdustr.dev/asset-2022/04-08-term-ptt-custom-theme/og.png" alt="term-ptt-custom-theme"></p><h2 class="anchor anchorWithHideOnScrollNavbar_XKru" id="簡介">簡介<a class="hash-link" href="#簡介" title="標題的直接連結">​</a></h2><p>這篇文可以協助您自訂 <a href="https://term.ptt.cc" target="_blank" rel="noopener noreferrer">term.ptt.cc</a> 主題。</p><h2 class="anchor anchorWithHideOnScrollNavbar_XKru" id="教學">教學<a class="hash-link" href="#教學" title="標題的直接連結">​</a></h2><p>請先安裝 <a href="https://www.tampermonkey.net/" target="_blank" rel="noopener noreferrer">Tampermonkey</a> 或 <a href="https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/" target="_blank" rel="noopener noreferrer">Greasemonkey</a> 。</p><p>以 Chrome Tampermonkey 為例，打開 Dashboard :</p><p><img src="https://vdustr.dev/asset-2022/04-08-term-ptt-custom-theme/steps/dashboard.png" alt="Open Dashboard"></p><p>新增腳本:</p><p><img src="https://vdustr.dev/asset-2022/04-08-term-ptt-custom-theme/steps/create.png" alt="Create A Script"></p><p>將 <a href="https://github.com/VdustR/term-ptt-custom-theme#usage" target="_blank" rel="noopener noreferrer">教學</a> 的內容複製、貼上、存檔即可，打開新的 tab 就會套用新主題囉～色碼可以自行替換。</p><p>另外也提供了 <a href="https://github.com/VdustR/term-ptt-custom-theme#gogh" target="_blank" rel="noopener noreferrer">Goph Themes</a> 的使用方式，同樣複製、貼上、存檔即可。 Theme Name 可以到 <a href="https://mayccoll.github.io/Gogh/" target="_blank" rel="noopener noreferrer">這裡</a> 找喜歡的替換。</p><p>記得確認腳本是否啟用。</p><p><img src="https://vdustr.dev/asset-2022/04-08-term-ptt-custom-theme/steps/active.png" alt="Check active"></p><p>另外我自己做了一個 <a href="https://github.com/VdustR/term-ptt-retro-theme" target="_blank" rel="noopener noreferrer">term-ptt-retro-theme</a> ，馬上就用上昨天 po 的 <a href="https://github.com/VdustR/gruvbox.css" target="_blank" rel="noopener noreferrer">gruvbox.css</a> 色票和 <a href="https://github.com/TakWolf/fusion-pixel-font" target="_blank" rel="noopener noreferrer">Fusion Pixel Font</a> 像素字型。使用方式同樣直接複製、貼上、存檔即可。使用點陣字型須另外在右鍵設定選單中手動修改字型:</p><div class="codeBlockContainer_JM4U theme-code-block"><div class="codeBlockContent_MyK3"><pre tabindex="0" class="prism-code language-text codeBlock_PYqy thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_tZk4"><span class="token-line" style="color:#F8F8F2"><span class="token plain">Fusion Pixel PTT,MingLiu,SymMingLiu,monospace</span><br></span></code></pre><button type="button" aria-label="複製代碼至剪貼簿" class="copyButton_Z6K4 clean-btn">複製</button></div></div><p>以下是成品：</p><p><img src="https://vdustr.dev/asset-2022/04-08-term-ptt-custom-theme/retro.png" alt="term-ptt-retro-theme"></p><p>另外如果不喜歡預設字型的話，也可以使用 <a href="https://github.com/justfont/open-huninn-font" target="_blank" rel="noopener noreferrer">jf open 粉圓</a> (需另外自行安裝，安裝新的字型之後需要重新啟動瀏覽器才能使用該字型) :</p><div class="codeBlockContainer_JM4U theme-code-block"><div class="codeBlockContent_MyK3"><pre tabindex="0" class="prism-code language-text codeBlock_PYqy thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_tZk4"><span class="token-line" style="color:#F8F8F2"><span class="token plain">SymMingLiu,"jf-openhuninn-1.1",MingLiu,monospace</span><br></span></code></pre><button type="button" aria-label="複製代碼至剪貼簿" class="copyButton_Z6K4 clean-btn">複製</button></div></div><p>大部分中文字型只要放在 <code>SymMingLiu</code> 這個字型後面就可以使用了，缺點是英文、數字、符號等就不是同一個字型。</p><p>Goph Graph Theme + <a href="https://github.com/justfont/open-huninn-font" target="_blank" rel="noopener noreferrer">jf open 粉圓</a> 範例:</p><p><img src="https://vdustr.dev/asset-2022/04-08-term-ptt-custom-theme/graph.png" alt="term-ptt-retro-theme"></p><p>如果您剛好有 GitHub 帳號也喜歡這個專案的話歡迎幫我按個星星～ 感謝 &gt;"&lt;</p><ul><li><a href="https://github.com/VdustR/term-ptt-custom-theme" target="_blank" rel="noopener noreferrer">term-ptt-custom-theme</a></li><li><a href="https://github.com/VdustR/term-ptt-retro-theme" target="_blank" rel="noopener noreferrer">term-ptt-retro-theme</a></li></ul><p>有任何疑問或是建議也歡迎使用任何可以聯絡得到我的方式一起交流～ 發 issue 也 ok ～</p>]]></content>
+        <author>
+            <name>ViPro</name>
+            <uri>https://vdustr.dev/</uri>
+        </author>
+        <category label="css" term="css"/>
+        <category label="theme" term="theme"/>
+        <category label="color" term="color"/>
+        <category label="palette" term="palette"/>
+        <category label="customization" term="customization"/>
+        <category label="pixel" term="pixel"/>
+        <category label="retro" term="retro"/>
+        <category label="greasemonkey" term="greasemonkey"/>
+        <category label="tampermonkey" term="tampermonkey"/>
+        <category label="ptt" term="ptt"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[gruvbox.css 🎨]]></title>
         <id>/2022/04/07/gruvbox-css</id>
