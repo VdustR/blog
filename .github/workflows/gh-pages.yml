@@ -17,12 +17,14 @@ jobs:
           cache-name: cache-pnpm-modules
         with:
           path: ~/.pnpm-store
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ matrix.node-version }}-${{ hashFiles('**/package.json') }}
+          # HACK: Another cache key with date postfix for avoiding cracked.
+          # https://github.com/actions/cache/issues/2
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ matrix.node-version }}-${{ hashFiles('**/package.json') }}-20220508
           restore-keys: |
             ${{ runner.os }}-build-${{ env.cache-name }}-${{ matrix.node-version }}-
       - uses: actions/setup-node@v2
         with:
-          node-version: '14'
+          node-version: "14"
       - uses: pnpm/action-setup@v1.2.1
         with:
           version: 5.14.3
