@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkblog=self.webpackChunkblog||[]).push([[520],{1083:function(g){g.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"/blog/tags/gitignore","name":"gitignore","count":1,"permalink":"/blog/tags/gitignore"}')}}]);

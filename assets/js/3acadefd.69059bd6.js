@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkblog=self.webpackChunkblog||[]).push([[6937],{5965:function(g){g.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"/blog/tags/gruvbox","name":"gruvbox","count":1,"permalink":"/blog/tags/gruvbox"}')}}]);

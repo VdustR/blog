@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkblog=self.webpackChunkblog||[]).push([[4713],{5050:function(e){e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"/blog/tags/tampermonkey","name":"tampermonkey","count":1,"permalink":"/blog/tags/tampermonkey"}')}}]);

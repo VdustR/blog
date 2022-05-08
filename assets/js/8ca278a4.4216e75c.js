@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkblog=self.webpackChunkblog||[]).push([[3592],{9835:function(e){e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"/blog/tags/dockerignore","name":"dockerignore","count":1,"permalink":"/blog/tags/dockerignore"}')}}]);

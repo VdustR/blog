@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkblog=self.webpackChunkblog||[]).push([[6347],{9426:function(e){e.exports=JSON.parse('{"label":"graphql-code-generator","permalink":"/blog/tags/graphql-code-generator","allTagsPath":"/blog/tags","count":1}')}}]);
