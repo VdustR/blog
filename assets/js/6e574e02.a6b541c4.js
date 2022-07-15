@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkblog=self.webpackChunkblog||[]).push([[7606],{9573:function(e){e.exports=JSON.parse('{"label":"useCapture","permalink":"/blog/tags/use-capture","allTagsPath":"/blog/tags","count":1}')}}]);

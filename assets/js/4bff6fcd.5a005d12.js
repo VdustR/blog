@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkblog=self.webpackChunkblog||[]).push([[9223],{1769:function(s){s.exports=JSON.parse('{"label":"shikijs","permalink":"/blog/tags/shikijs","allTagsPath":"/blog/tags","count":1}')}}]);

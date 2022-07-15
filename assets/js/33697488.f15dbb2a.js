@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkblog=self.webpackChunkblog||[]).push([[9769],{6929:function(s){s.exports=JSON.parse('{"label":"vitejs","permalink":"/blog/tags/vitejs","allTagsPath":"/blog/tags","count":1}')}}]);

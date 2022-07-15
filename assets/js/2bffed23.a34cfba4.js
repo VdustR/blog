@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkblog=self.webpackChunkblog||[]).push([[3888],{9236:function(e){e.exports=JSON.parse('{"label":"ts-node-dev","permalink":"/blog/tags/ts-node-dev","allTagsPath":"/blog/tags","count":1}')}}]);
