@@ -33,6 +33,10 @@ const config = {
           customCss: require.resolve("./src/css/custom.css"),
         },
         pages: false,
+        googleAnalytics: {
+          trackingID: "UA-141789564-1",
+          anonymizeIP: true,
+        },
       }),
     ],
   ],
