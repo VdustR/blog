@@ -1,6 +1,6 @@
 ---
 description: 透過 gsvt 懶人工具幫打 major, minor version tags 並發布 GitHub Actions。
-image: https://vdustr.dev/asset-2022/04-08-term-ptt-custom-theme/og.png
+image: https://vdustr.dev/asset-2022/09-24-gsvt/gsvt-cover.png
 authors: [ViPro]
 tags:
   - action
