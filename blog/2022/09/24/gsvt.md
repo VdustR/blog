@@ -51,5 +51,5 @@ git push origin main --tags -f
 
 ## Links
 
-- Repository: [ViPro-Dev/gsvt](https://github.com/VdustR/gsvt)
+- Repository: [VdustR/gsvt](https://github.com/VdustR/gsvt)
 - npm: [gsvt](https://www.npmjs.com/package/gsvt)
