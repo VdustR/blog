@@ -69,7 +69,7 @@ pnpm exec cspell
 ```ts
 // lint-staged.config.js
 const config = {
-  "**": "cspell lint",
+  "**": "cspell lint --no-must-find-files",
 };
 
 module.exports = config;
