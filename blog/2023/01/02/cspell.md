@@ -48,7 +48,7 @@ cspell 本身除了 Visual Studio Code extension 外，也有提供 CLI 可以�
   // 對所有檔案類型啟用, 預設如 `.env` 這類的 `ini` 檔不會被檢查
   "enableFiletypes": ["*"],
   // 僅檢查拉丁字。 某些字如 `ภาษาไทย` 基於某種原因會被 cspell 判斷為錯字。
-  "includeRegExpList": ["[\u0000-\u024F]"],
+  "includeRegExpList": ["[\u0020-\u024F]"],
   // 被我們承認的額外單字都加在這裡
   "words": []
 }
