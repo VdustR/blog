@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkblog=self.webpackChunkblog||[]).push([[6633],{3444:s=>{s.exports=JSON.parse('{"label":"visual-studio-code","permalink":"/blog/tags/visual-studio-code","allTagsPath":"/blog/tags","count":1}')}}]);

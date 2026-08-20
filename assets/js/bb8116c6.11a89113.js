@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkblog=self.webpackChunkblog||[]).push([[5436],{8678:s=>{s.exports=JSON.parse('{"label":"sveltejs","permalink":"/blog/tags/sveltejs","allTagsPath":"/blog/tags","count":1}')}}]);

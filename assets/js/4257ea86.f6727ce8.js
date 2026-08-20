@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkblog=self.webpackChunkblog||[]).push([[5969],{4198:s=>{s.exports=JSON.parse('{"label":"zodios","permalink":"/blog/tags/zodios","allTagsPath":"/blog/tags","count":1}')}}]);
