@@ -8,12 +8,12 @@ const title = "ViPro's Blog";
 const config = {
   title,
   tagline: "我隨便寫寫, 客官就隨意看看",
-  url: "https://vdustr.dev",
+  url: "https://vdustr.github.io",
   baseUrl: "/blog/",
   trailingSlash: true,
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "https://vdustr.dev/brand/2022-01/favicon.ico",
+  favicon: "https://vdustr.github.io/brand/2022-01/favicon.ico",
   i18n: {
     locales: ["zh-Hant"],
     defaultLocale: "zh-Hant",
@@ -44,7 +44,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: "https://vdustr.dev/brand/2022-01/ogimage.png",
+      image: "https://vdustr.github.io/brand/2022-01/ogimage.png",
       colorMode: {
         defaultMode: "dark",
         disableSwitch: true,
@@ -54,14 +54,14 @@ const config = {
         title,
         logo: {
           alt: "ViPro's Blog",
-          src: "https://vdustr.dev/brand/2022-01/logo.svg",
+          src: "https://vdustr.github.io/brand/2022-01/logo.svg",
         },
         items:
           /** @type {import('@docusaurus/preset-classic').ThemeConfig["navbar"]["items"]} */
           [
             {
               label: "ViPro Land",
-              href: "https://vdustr.dev",
+              href: "https://vdustr.github.io",
               position: "right",
             },
           ],
@@ -77,7 +77,7 @@ const config = {
               items: [
                 {
                   label: "About Me",
-                  href: "//vdustr.dev",
+                  href: "https://vdustr.github.io",
                 },
                 {
                   label: "GitHub",
@@ -85,11 +85,11 @@ const config = {
                 },
                 {
                   label: "Links",
-                  href: "//vdustr.dev/links",
+                  href: "https://vdustr.github.io/links",
                 },
                 {
                   label: "Projects",
-                  href: "//vdustr.dev/projects",
+                  href: "https://vdustr.github.io/projects",
                 },
               ],
             },
@@ -113,7 +113,7 @@ const config = {
           ],
         logo: {
           alt: "ViPro's Blog",
-          src: "https://vdustr.dev/brand/2022-01/logo.svg",
+          src: "https://vdustr.github.io/brand/2022-01/logo.svg",
           height: 32,
           width: 32,
         },

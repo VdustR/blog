@@ -1,6 +1,6 @@
 ---
 description: An imports transform unplugin.
-image: https://vdustr.dev/asset-2022/03-26-unplugin-transform-imports/og.png
+image: https://vdustr.github.io/asset-2022/03-26-unplugin-transform-imports/og.png
 authors: [ViPro]
 tags:
   - esbuild
@@ -19,7 +19,7 @@ tags:
 
 An imports transform unplugin.
 
-![unplugin-transform-imports banner](https://vdustr.dev/asset-2022/03-26-unplugin-transform-imports/og.png)
+![unplugin-transform-imports banner](https://vdustr.github.io/asset-2022/03-26-unplugin-transform-imports/og.png)
 
 <!--truncate-->
 

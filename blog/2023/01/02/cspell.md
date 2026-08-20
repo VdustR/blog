@@ -1,6 +1,6 @@
 ---
 description: A spell checker for code!
-image: https://vdustr.dev/asset-2023/01-02-cspell/ogimage.png
+image: https://vdustr.github.io/asset-2023/01-02-cspell/ogimage.png
 authors: [ViPro]
 tags:
   - cspell
@@ -12,7 +12,7 @@ tags:
 
 > A spell checker for code!
 
-![cspell](https://vdustr.dev/asset-2023/01-02-cspell/ogimage.png)
+![cspell](https://vdustr.github.io/asset-2023/01-02-cspell/ogimage.png)
 
 2023 新年快樂！連假來一發～
 
@@ -26,7 +26,7 @@ cspell 本身除了 Visual Studio Code extension 外，也有提供 CLI 可以�
 
 > Spell: Create a CSpell Configuration File.
 
-![cspell](https://vdustr.dev/asset-2023/01-02-cspell/create-config.png)
+![cspell](https://vdustr.github.io/asset-2023/01-02-cspell/create-config.png)
 
 然後再選擇 `cspell.json`.
 

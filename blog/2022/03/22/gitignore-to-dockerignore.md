@@ -1,6 +1,6 @@
 ---
 description: Transform .gitignore to .dockerignore.
-image: https://vdustr.dev/asset-2022/03-22-gitignore-to-dockerignore/og.png
+image: https://vdustr.github.io/asset-2022/03-22-gitignore-to-dockerignore/og.png
 authors: [ViPro]
 tags:
   - git
@@ -14,7 +14,7 @@ tags:
 
 Transform .gitignore to .dockerignore.
 
-![g2d banner](https://vdustr.dev/asset-2022/03-22-gitignore-to-dockerignore/og.png)
+![g2d banner](https://vdustr.github.io/asset-2022/03-22-gitignore-to-dockerignore/og.png)
 
 <!--truncate-->
 
@@ -36,8 +36,8 @@ Icon^M
 
 這會導致一般的 `Icon` 路徑也被 ignored，因此無論是 `.gitignore` 或 `.dockerignore` 都應將其保留。
 
-大概在 2021 年 9 月的時候寫了一個 [deno 版本的 g2d](https://github.com/VdustR/g2d) 並提供 binaries 和 container image ，現在則將它移植到 node 並額外提供 [online 版](https://vdustr.dev/g2d.js/online/)，可以直接透過線上編輯或上傳 `.gitignore` 並預覽、複製、下載 `.dockerignore`。
+大概在 2021 年 9 月的時候寫了一個 [deno 版本的 g2d](https://github.com/VdustR/g2d) 並提供 binaries 和 container image ，現在則將它移植到 node 並額外提供 [online 版](https://vdustr.github.io/g2d.js/online/)，可以直接透過線上編輯或上傳 `.gitignore` 並預覽、複製、下載 `.dockerignore`。
 
-- 👉 [g2d Official Site](https://vdustr.dev/g2d.js/)
-- 🚀 [g2d Online](https://vdustr.dev/g2d.js/online/)
-- 🦕 [deno g2d](https://vdustr.dev/g2d.js/deno/)
+- 👉 [g2d Official Site](https://vdustr.github.io/g2d.js/)
+- 🚀 [g2d Online](https://vdustr.github.io/g2d.js/online/)
+- 🦕 [deno g2d](https://vdustr.github.io/g2d.js/deno/)

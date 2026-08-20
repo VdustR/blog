@@ -1,6 +1,6 @@
 ---
 description: 當前，API 已經成為了現代軟體開發的重要組成部分，然而，由於其繁雜的串接體驗，對於開發人員來說，這並不總是一個容易的過程。為了簡化這個過程，Zodios 提供了一個解決方案，它可以幫助您從繁雜的 API 串接中解放出來，讓您能夠更輕鬆地開發應用程式。在本文中，我們將探討如何使用 Zodios 來重塑您的 API 串接體驗，並為您提供更簡單、更高效的開發解決方案。
-image: https://vdustr.dev/asset-2023/03-20-zodios/ogimage.png
+image: https://vdustr.github.io/asset-2023/03-20-zodios/ogimage.png
 authors: [ViPro]
 tags:
   - api
@@ -13,7 +13,7 @@ tags:
 # 從繁到簡：使用 Zodios 重塑您的 API 串接體驗
 
 ![This article was assisted by ChatGPT and the image was also generated through Stable Diffusion
-](https://vdustr.dev/asset-2023/03-20-zodios/ogimage.png)
+](https://vdustr.github.io/asset-2023/03-20-zodios/ogimage.png)
 
 當前，API 已經成為了現代軟體開發的重要組成部分，然而，由於其繁雜的串接體驗，對於開發人員來說，這並不總是一個容易的過程。為了簡化這個過程，Zodios 提供了一個解決方案，它可以幫助您從繁雜的 API 串接中解放出來，讓您能夠更輕鬆地開發應用程式。在本文中，我們將探討如何使用 Zodios 來重塑您的 API 串接體驗，並為您提供更簡單、更高效的開發解決方案。
 

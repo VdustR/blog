@@ -1,6 +1,6 @@
 ---
 description: 透過 gsvt 懶人工具幫打 major, minor version tags 並發布 GitHub Actions。
-image: https://vdustr.dev/asset-2022/09-24-gsvt/gsvt-cover.png
+image: https://vdustr.github.io/asset-2022/09-24-gsvt/gsvt-cover.png
 authors: [ViPro]
 tags:
   - action
@@ -19,7 +19,7 @@ tags:
 
 通常我們在使用別人的 GitHub Actions 時，都能透過如 `v2`, `v2.3` 這種只打到 major 或 minor 的方式取得 `v2.x.x` 的最新版本，一直到自己 publish 自己的 GitHub Action 才發現他並不會像 npm 一樣自動解析，必須自己將 `vX`, `vX.X` 這樣的 tag push 到 repo 才行，但每次都要 force tag / force push 總是有點麻煩，一直找不到類似的工具，稍微弄了了個小工具來快速打版。
 
-![gsvt](https://vdustr.dev/asset-2022/09-24-gsvt/gsvt-cover.png)
+![gsvt](https://vdustr.github.io/asset-2022/09-24-gsvt/gsvt-cover.png)
 
 <!--truncate-->
 

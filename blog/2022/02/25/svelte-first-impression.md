@@ -1,6 +1,6 @@
 ---
 description: 雖然有點晚了，但最近才比較有空稍微試玩了一下，寫了兩個小 repo ，有些小小心得在這裡紀錄一下。
-image: https://vdustr.dev/asset-2022/02-25-svelte-first-impression/og.png
+image: https://vdustr.github.io/asset-2022/02-25-svelte-first-impression/og.png
 authors: [ViPro]
 tags:
   - review
@@ -11,7 +11,7 @@ tags:
 
 雖然有點晚了，但最近才比較有空稍微試玩了一下，寫了兩個小 repo ，有些小小心得紀錄在這裡。
 
-![Svelte First Impression](https://vdustr.dev/asset-2022/02-25-svelte-first-impression/og.png)
+![Svelte First Impression](https://vdustr.github.io/asset-2022/02-25-svelte-first-impression/og.png)
 
 <!--truncate-->
 
@@ -25,7 +25,7 @@ tags:
 
 另外作者 [Rich Harris](https://twitter.com/Rich_Harris) 的 [Rethinking reactivity](https://youtu.be/AdNJ3fydeao) 分享設計理念的影片也非常值得一看。當中我很喜歡這句話：
 
-![Frameworks are not tools for organising your code, They are tools for organising your mind.](https://vdustr.dev/asset-2022/02-25-svelte-first-impression/framework.png)
+![Frameworks are not tools for organising your code, They are tools for organising your mind.](https://vdustr.github.io/asset-2022/02-25-svelte-first-impression/framework.png)
 
 我個人認為 React hooks, Vue composition API, Svelte 3 在寫法上有一定的相似之處，我不清楚這種開發方式是否有什麼具體的專有名詞。
 
