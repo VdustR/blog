@@ -22,7 +22,7 @@ jobs:
             ${{ runner.os }}-build-${{ env.cache-name }}-${{ matrix.node-version }}-
       - uses: actions/setup-node@v2
         with:
-          node-version: "18"
+          node-version: "20"
       - uses: pnpm/action-setup@v2
         with:
           version: 7
