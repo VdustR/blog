@@ -1,0 +1,4 @@
+allowBuilds:
+  core-js: true
+overrides:
+  lunr-languages: 1.21.0
