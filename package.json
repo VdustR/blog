@@ -3,41 +3,28 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "docusaurus": "docusaurus",
-    "start": "docusaurus start",
-    "build": "docusaurus build",
-    "clear": "docusaurus clear",
-    "serve": "docusaurus serve",
-    "audit": "pnpm audit --prod --ignore GHSA-w3rx-r6r6-pgpr --ignore GHSA-5p2g-fcmc-qvqq",
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "audit": "pnpm audit --prod",
     "format": "oxfmt --write .",
     "format:check": "oxfmt --check .",
     "lint": "oxlint . --deny-warnings",
     "lint:fix": "oxlint . --fix --deny-warnings",
-    "security:check": "node scripts/check-image-size-patch.cjs && pnpm run audit",
-    "typecheck": "tsc --noEmit"
+    "security:check": "pnpm run audit",
+    "typecheck": "astro check"
   },
   "dependencies": {
-    "@docusaurus/core": "3.10.2",
-    "@docusaurus/plugin-google-gtag": "3.10.2",
-    "@docusaurus/preset-classic": "3.10.2",
-    "@docusaurus/theme-classic": "3.10.2",
-    "@mdx-js/react": "3.1.1",
-    "@node-rs/jieba": "2.0.2",
-    "docusaurus-lunr-search": "3.6.0",
-    "lunr": "2.3.9",
-    "lunr-languages": "1.21.0",
-    "prism-react-renderer": "2.4.1",
-    "react": "19.2.8",
-    "react-dom": "19.2.8"
+    "@astrojs/rss": "4.0.19",
+    "@astrojs/starlight": "0.41.7",
+    "astro": "7.2.4"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "3.10.2",
-    "@docusaurus/types": "3.10.2",
-    "@types/react": "19.2.18",
-    "@types/react-dom": "19.2.4",
+    "@astrojs/check": "0.9.10",
     "oxfmt": "0.64.0",
     "oxlint": "1.79.0",
-    "typescript": "7.0.2"
+    "typescript": "6.0.3"
   },
   "browserslist": {
     "production": [
@@ -52,7 +39,7 @@
     ]
   },
   "engines": {
-    "node": "26.7.0",
+    "node": ">=22.12.0",
     "pnpm": "11.22.0"
   },
   "packageManager": "pnpm@11.22.0"

@@ -1,0 +1,314 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-23T00:00:00+08:00",
+  "title": "Design System: VDUSTR",
+  "extensions": {
+    "colorMeta": {
+      "cobalt": {
+        "role": "primary",
+        "displayName": "Botanical Cobalt",
+        "canonical": "#1545c5",
+        "tonalRamp": [
+          "#071439",
+          "#0b286f",
+          "#1039a1",
+          "#1545c5",
+          "#5275d5",
+          "#91a8e7",
+          "#cbd6f6",
+          "#f1f5ff"
+        ]
+      },
+      "cobalt-soft": {
+        "role": "primary",
+        "displayName": "Cobalt Wash",
+        "canonical": "#eaf0ff",
+        "tonalRamp": [
+          "#071439",
+          "#0b286f",
+          "#1545c5",
+          "#5275d5",
+          "#91a8e7",
+          "#cbd6f6",
+          "#eaf0ff",
+          "#f7f9ff"
+        ]
+      },
+      "cobalt-deep": {
+        "role": "primary",
+        "displayName": "Deep Cobalt",
+        "canonical": "#0b286f",
+        "tonalRamp": [
+          "#050d25",
+          "#0b286f",
+          "#1039a1",
+          "#1545c5",
+          "#5275d5",
+          "#91a8e7",
+          "#cbd6f6",
+          "#f1f5ff"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Publication Paper",
+        "canonical": "#fdfdfc",
+        "tonalRamp": [
+          "#242420",
+          "#45453f",
+          "#686861",
+          "#8f8f88",
+          "#b8b8b1",
+          "#d9d9d3",
+          "#eeeeea",
+          "#fdfdfc"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Clean Surface",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "#262626",
+          "#494949",
+          "#6e6e6e",
+          "#969696",
+          "#bfbfbf",
+          "#dddddd",
+          "#f0f0f0",
+          "#ffffff"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Editorial Ink",
+        "canonical": "#14161c",
+        "tonalRamp": [
+          "#14161c",
+          "#2c2f38",
+          "#484b55",
+          "#686b75",
+          "#8b8e96",
+          "#b1b3b9",
+          "#d8d9dc",
+          "#f1f2f3"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Soft Ink",
+        "canonical": "#454a56",
+        "tonalRamp": [
+          "#16181d",
+          "#2c3038",
+          "#454a56",
+          "#656b78",
+          "#898e99",
+          "#afb2ba",
+          "#d6d8dc",
+          "#f1f2f3"
+        ]
+      },
+      "slate": {
+        "role": "neutral",
+        "displayName": "Slate Notes",
+        "canonical": "#5c6270",
+        "tonalRamp": [
+          "#17191d",
+          "#30343b",
+          "#4a4f5b",
+          "#686e7b",
+          "#8b909b",
+          "#b0b3bb",
+          "#d7d9dd",
+          "#f1f2f4"
+        ]
+      },
+      "slate-light": {
+        "role": "neutral",
+        "displayName": "Light Slate",
+        "canonical": "#686e7b",
+        "tonalRamp": [
+          "#181a1e",
+          "#34373e",
+          "#515660",
+          "#686e7b",
+          "#90949e",
+          "#b5b8bf",
+          "#dadce0",
+          "#f2f3f4"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Cool Rule",
+        "canonical": "#e5e7eb",
+        "tonalRamp": [
+          "#22252a",
+          "#42464e",
+          "#656a74",
+          "#8b9099",
+          "#b2b6bd",
+          "#d0d3d8",
+          "#e5e7eb",
+          "#f5f6f7"
+        ]
+      },
+      "rule-strong": {
+        "role": "neutral",
+        "displayName": "Strong Cool Rule",
+        "canonical": "#d9dce2",
+        "tonalRamp": [
+          "#202329",
+          "#3f444c",
+          "#626771",
+          "#888e98",
+          "#afb4bc",
+          "#c9cdd3",
+          "#d9dce2",
+          "#f2f3f5"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Masthead Display",
+        "purpose": "Homepage VDUSTR statement only."
+      },
+      "headline": {
+        "displayName": "Editorial Headline",
+        "purpose": "Major section divisions."
+      },
+      "title": {
+        "displayName": "Article Title",
+        "purpose": "Article cards and compact headings."
+      },
+      "body": {
+        "displayName": "Reading Body",
+        "purpose": "Traditional Chinese long-form prose."
+      },
+      "label": {
+        "displayName": "Technical Label",
+        "purpose": "Indices, dates, metadata, and action cues."
+      },
+      "mono": {
+        "displayName": "Code",
+        "purpose": "Code samples and technical literals."
+      }
+    },
+    "shadows": [
+      {
+        "name": "card-hover",
+        "value": "0 18px 42px rgba(21, 69, 197, 0.09)",
+        "purpose": "Temporary ambient lift on article-card hover."
+      }
+    ],
+    "motion": [
+      {
+        "name": "editorial-snap",
+        "value": "180ms cubic-bezier(0.22, 1, 0.36, 1)",
+        "purpose": "Navigation underline and directional arrow feedback."
+      },
+      {
+        "name": "card-lift",
+        "value": "220ms cubic-bezier(0.22, 1, 0.36, 1)",
+        "purpose": "Article-card hover movement; reduce to near-zero when reduced motion is requested."
+      }
+    ],
+    "breakpoints": [
+      { "name": "tablet", "value": "72rem" },
+      { "name": "mobile", "value": "50rem" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Latest Article Link",
+      "kind": "custom",
+      "refersTo": "latest-article-link",
+      "description": "The homepage's single emphasized path into the latest real article.",
+      "html": "<a class=\"ds-latest-link\" href=\"#\"><span>最新文章</span><strong>文章標題</strong><span aria-hidden=\"true\">↗</span></a>",
+      "css": ".ds-latest-link { width: fit-content; display: grid; grid-template-columns: auto auto auto; align-items: baseline; gap: .7rem; padding: .85rem 0 .75rem; border-bottom: 3px solid #1545c5; color: #14161c; text-decoration: none; } .ds-latest-link span:first-child { color: #1545c5; font-size: .8rem; font-weight: 700; letter-spacing: .08em; } .ds-latest-link span:last-child { transition: transform 180ms cubic-bezier(.22,1,.36,1); } .ds-latest-link:hover span:last-child { transform: translate(.25rem,-.25rem); } .ds-latest-link:focus-visible { outline: 3px solid #1545c5; outline-offset: 4px; border-radius: 4px; }"
+    },
+    {
+      "name": "Article Card",
+      "kind": "card",
+      "refersTo": "article-card",
+      "description": "A structured preview for a recent article.",
+      "html": "<a class=\"ds-article-card\" href=\"#\"><span class=\"ds-card-index\">01</span><span class=\"ds-card-tags\">Astro · CSS</span><h3>文章標題</h3><p>以一段短摘要說明這篇技術筆記處理的問題。</p><time>2026/08/23</time><span class=\"ds-card-arrow\" aria-hidden=\"true\">→</span></a>",
+      "css": ".ds-article-card { min-height: 21rem; display: flex; flex-direction: column; padding: 1.5rem; border: 1px solid #e1e3e8; border-radius: 12px; color: #14161c; background: #fff; text-decoration: none; transition: transform 220ms cubic-bezier(.22,1,.36,1), border-color 220ms ease, box-shadow 220ms ease; } .ds-article-card:hover { transform: translateY(-.35rem); border-color: #1545c5; box-shadow: 0 18px 42px rgba(21,69,197,.09); } .ds-article-card:focus-visible { outline: 3px solid #1545c5; outline-offset: 4px; } .ds-card-index,.ds-card-tags,.ds-card-arrow { color: #1545c5; } .ds-card-index { font-size: .78rem; font-weight: 700; } .ds-card-tags { margin-top: 1rem; font-size: .7rem; } .ds-article-card h3 { margin: .8rem 0 0; font: 400 1.45rem/1.35 Lithue, 'Noto Serif TC', serif; } .ds-article-card p { color: #5c6270; font-size: .84rem; line-height: 1.65; } .ds-article-card time { margin-top: auto; color: #686e7b; font-size: .75rem; } .ds-card-arrow { align-self: flex-end; font-size: 1.4rem; }"
+    },
+    {
+      "name": "Archive Row",
+      "kind": "custom",
+      "description": "A quiet chronological entry for the complete archive.",
+      "html": "<a class=\"ds-archive-row\" href=\"#\"><time>2026/08/23</time><span>文章標題</span><span aria-hidden=\"true\">↗</span></a>",
+      "css": ".ds-archive-row { display: grid; grid-template-columns: 9rem 1fr auto; align-items: center; gap: 2rem; padding: 1.25rem 0; border-bottom: 1px solid #e5e7eb; color: #14161c; text-decoration: none; } .ds-archive-row time { color: #686e7b; font-size: .78rem; font-variant-numeric: tabular-nums; } .ds-archive-row span:last-child { color: #1545c5; } .ds-archive-row:hover span:nth-child(2) { color: #1545c5; } .ds-archive-row:focus-visible { outline: 3px solid #1545c5; outline-offset: 4px; border-radius: 4px; }"
+    },
+    {
+      "name": "Primary Navigation Link",
+      "kind": "nav",
+      "description": "A restrained Lithué navigation label with an active cobalt rule.",
+      "html": "<a class=\"ds-nav-link\" href=\"#\">文章</a>",
+      "css": ".ds-nav-link { position: relative; color: #20222a; font-family: Lithue, 'Noto Serif TC', serif; font-size: 1.05rem; letter-spacing: .08em; text-decoration: none; } .ds-nav-link::after { content: ''; position: absolute; right: 0; bottom: -.65rem; left: 0; height: 2px; background: #1545c5; transform: scaleX(0); transform-origin: left; transition: transform 180ms cubic-bezier(.22,1,.36,1); } .ds-nav-link:hover::after,.ds-nav-link:focus-visible::after { transform: scaleX(1); } .ds-nav-link:focus-visible { outline: 3px solid #1545c5; outline-offset: 4px; border-radius: 4px; }"
+    },
+    {
+      "name": "Search Control",
+      "kind": "button",
+      "refersTo": "search-control",
+      "description": "A compact pill that opens the full Pagefind search experience.",
+      "html": "<button class=\"ds-search\" type=\"button\" aria-label=\"搜尋文章\"><svg aria-hidden=\"true\" viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><circle cx=\"11\" cy=\"11\" r=\"7\"/><path d=\"m20 20-4-4\"/></svg><span>搜尋</span></button>",
+      "css": ".ds-search { display: inline-flex; align-items: center; gap: .5rem; padding: .6rem .9rem; border: 1px solid #d9dce2; border-radius: 999px; color: #14161c; background: #fff; font: 400 .9rem/1 'Noto Sans TC','PingFang TC',system-ui,sans-serif; cursor: pointer; } .ds-search:hover { border-color: #1545c5; } .ds-search:active { background: #eaf0ff; } .ds-search:focus-visible { outline: 3px solid #1545c5; outline-offset: 4px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Technical Herbarium",
+    "overview": "VDUSTR is a light, spacious technical publication where precise engineering notes sit inside an authored editorial setting. Lithué gives the masthead and headings their distinctive Traditional Chinese character; restrained cobalt botanical ink adds a memorable human mark without competing with the archive.\n\nThe system feels polished and publication-led while keeping familiar technical-blog navigation and reading patterns. Content carries authority through typography, whitespace, rules, and real article entries rather than promotional claims.",
+    "keyCharacteristics": [
+      "Near-white paper, dark ink, and one restrained cobalt accent.",
+      "Lithué display type paired with a highly readable Traditional Chinese system sans.",
+      "Hairline structure, generous whitespace, and flat content surfaces.",
+      "Botanical ink artwork is the signature image language; article text remains the proof."
+    ],
+    "rules": [
+      {
+        "name": "The One Cobalt Rule",
+        "body": "Cobalt is the only saturated interface color. Its scarcity makes the primary path and focus state unambiguous.",
+        "section": "colors"
+      },
+      {
+        "name": "The Lithué Voice Rule",
+        "body": "Use Lithué for the wordmark, hero statement, navigation, and headings. Do not use it for long paragraphs, metadata, or code.",
+        "section": "typography"
+      },
+      {
+        "name": "The Stable Font Path Rule",
+        "body": "Local Lithué names are development fallbacks only. The later justfont integration must serve or replace /blog/fonts/lithue.woff2 through a stable production @font-face source while preserving the Lithue family name and font-display: swap.",
+        "section": "typography"
+      },
+      {
+        "name": "The First-Viewport Rule",
+        "body": "The latest real article must remain reachable in the first viewport; decorative art may yield space before that action does.",
+        "section": "layout"
+      },
+      {
+        "name": "The Flat-at-Rest Rule",
+        "body": "Surfaces at rest use rules and tonal contrast. Elevation appears only to communicate interaction or overlay state.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do preserve the approved light publication composition and keep real article entries central.",
+      "Do use semantic HTML for all text, navigation, controls, cards, and focus states.",
+      "Do preserve keyboard navigation, visible focus, readable contrast, reduced motion, and first-class Traditional Chinese typography.",
+      "Do use the botanical artwork as a transparent decorative asset and retain its bloom, branch direction, loose petals, and pale wash when cropping.",
+      "Do preserve article routes, article copy, search behavior, metadata, and code readability."
+    ],
+    "donts": [
+      "Don't introduce a dark theme into this light-only identity.",
+      "Don't add saturated colors beyond cobalt or turn neutral surfaces into decorative gradients.",
+      "Don't use persistent content shadows, excessive rounding, or filled marketing buttons.",
+      "Don't rasterize semantic content or interactive controls into brand imagery.",
+      "Don't invent metrics, testimonials, clients, or outcomes; the archive is the proof."
+    ]
+  }
+}

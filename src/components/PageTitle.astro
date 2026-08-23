@@ -1,0 +1,19 @@
+---
+import DefaultPageTitle from "@astrojs/starlight/components/PageTitle.astro";
+
+const data = Astro.locals.starlightRoute?.entry?.data;
+const isHome = Astro.url.pathname.replace(/\/+$/, "") === import.meta.env.BASE_URL.replace(/\/+$/, "");
+const publishDate = data && "publishDate" in data ? data.publishDate as Date | undefined : undefined;
+const tags = data && "tags" in data && Array.isArray(data.tags) ? data.tags as string[] : [];
+const formatDate = (date: Date) =>
+  new Intl.DateTimeFormat("zh-Hant", { year: "numeric", month: "long", day: "numeric" }).format(date);
+---
+
+{!isHome && <DefaultPageTitle />}
+{!isHome && publishDate && (
+  <div class="article-meta">
+    <time datetime={publishDate.toISOString()}>{formatDate(publishDate)}</time>
+    {tags.length > 0 && <span aria-hidden="true">/</span>}
+    <ul aria-label="文章標籤">{tags.map((tag) => <li>{tag}</li>)}</ul>
+  </div>
+)}
