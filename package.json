@@ -8,10 +8,12 @@
     "build": "docusaurus build",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
+    "audit": "pnpm audit --prod --ignore GHSA-w3rx-r6r6-pgpr --ignore GHSA-5p2g-fcmc-qvqq",
     "format": "oxfmt --write .",
     "format:check": "oxfmt --check .",
     "lint": "oxlint . --deny-warnings",
     "lint:fix": "oxlint . --fix --deny-warnings",
+    "security:check": "node scripts/check-image-size-patch.cjs && pnpm run audit",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
