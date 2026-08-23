@@ -1,6 +1,6 @@
 ---
 description: 讓 Discord 更美更好用的工具
-image: https://ganhuaking.tw/asset-2021/12-11-better-discord/og.png
+image: https://vdustr.github.io/assets-2021/12-11-better-discord/og.png
 authors: [ViPro]
 tags:
   - discord
@@ -24,17 +24,17 @@ Better Discord 是個能讓 Discord 高度客製的好用工具， 有廣大的�
 
 ## 安裝 PluginRepo
 
-安裝完成後 Discord 不需要重啟， 點擊 ![User Settings](https://ganhuaking.tw/asset-2021/12-11-better-discord/userSettings.png) 後理論上會出現一個 Better Discord 的區塊：
+安裝完成後 Discord 不需要重啟， 點擊 ![User Settings](https://vdustr.github.io/assets-2021/12-11-better-discord/userSettings.png) 後理論上會出現一個 Better Discord 的區塊：
 
-![Plugins](https://ganhuaking.tw/asset-2021/12-11-better-discord/plugins.png)
+![Plugins](https://vdustr.github.io/assets-2021/12-11-better-discord/plugins.png)
 
-接著進入 Plugins 頁面並點擊 [Open Plugins Folder](https://ganhuaking.tw/asset-2021/12-11-better-discord/openPluginsFolder.png) ，到 [這裡](https://betterdiscord.app/plugins?filter=repo) 下載 [PluginRepo](https://betterdiscord.app/plugin/PluginRepo) 的 `.js` 檔後放進剛剛的目錄 ( [ThemeRepo](https://betterdiscord.app/plugin/ThemeRepo) 也可以順便 )， 然後回到 Plugins 頁面將 PluginRepo 啟用：
+接著進入 Plugins 頁面並點擊 [Open Plugins Folder](https://vdustr.github.io/assets-2021/12-11-better-discord/openPluginsFolder.png) ，到 [這裡](https://betterdiscord.app/plugins?filter=repo) 下載 [PluginRepo](https://betterdiscord.app/plugin/PluginRepo) 的 `.js` 檔後放進剛剛的目錄 ( [ThemeRepo](https://betterdiscord.app/plugin/ThemeRepo) 也可以順便 )， 然後回到 Plugins 頁面將 PluginRepo 啟用：
 
-![Enable PluginRepo](https://ganhuaking.tw/asset-2021/12-11-better-discord/enablePluginRepo.png)
+![Enable PluginRepo](https://vdustr.github.io/assets-2021/12-11-better-discord/enablePluginRepo.png)
 
 接著會看到設定頁面左側選單多了 PluginRepo 的項目：
 
-![PluginRepo](https://ganhuaking.tw/asset-2021/12-11-better-discord/pluginRepo.png)
+![PluginRepo](https://vdustr.github.io/assets-2021/12-11-better-discord/pluginRepo.png)
 
 進入之後就可以選擇自己喜歡的 plugins 安裝啦～ ( Theme 同理但是是使用 ThemeRepo)。 依照 Downloads 或 Stars 排序前幾個都滿好用的， 當然也有可能也有遺珠等待大家去發掘了！
 
@@ -74,7 +74,7 @@ Better Discord 是個能讓 Discord 高度客製的好用工具， 有廣大的�
 
 最後結果就能變像這樣子啦~
 
-![final](https://ganhuaking.tw/asset-2021/12-11-better-discord/final.png)
+![final](https://vdustr.github.io/assets-2021/12-11-better-discord/final.png)
 
 - Theme - [DarkMatter](https://betterdiscord.app/theme/Dark%20Matter)
 - Fonts
