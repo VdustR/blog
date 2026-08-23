@@ -69,7 +69,7 @@ Goph Graph Theme + [jf open 粉圓](https://github.com/justfont/open-huninn-font
 
 ![term-ptt-retro-theme](https://vdustr.github.io/asset-2022/04-08-term-ptt-custom-theme/graph.png)
 
-如果您剛好有 GitHub 帳號也喜歡這個專案的話歡迎幫我按個星星～ 感謝 >"<
+如果您剛好有 GitHub 帳號也喜歡這個專案的話歡迎幫我按個星星～ 感謝 &gt;"&lt;
 
 - [term-ptt-custom-theme](https://github.com/VdustR/term-ptt-custom-theme)
 - [term-ptt-retro-theme](https://github.com/VdustR/term-ptt-retro-theme)

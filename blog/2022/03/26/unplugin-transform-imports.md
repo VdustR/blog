@@ -96,5 +96,5 @@ import { merge } from "lodash";
 
 以下是 `unplugin-transform-imports` 的連結：
 
-- NPM: <https://www.npmjs.com/package/unplugin-transform-imports>
-- GitHub: <https://github.com/VdustR/unplugin-transform-imports>
+- NPM: [https://www.npmjs.com/package/unplugin-transform-imports](https://www.npmjs.com/package/unplugin-transform-imports)
+- GitHub: [https://github.com/VdustR/unplugin-transform-imports](https://github.com/VdustR/unplugin-transform-imports)

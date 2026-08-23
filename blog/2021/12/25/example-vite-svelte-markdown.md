@@ -24,4 +24,4 @@ tags:
 
 想在 svelte 使用 markdown, 看到已經有大大開發了個套件叫 [MDsveX](https://github.com/pngwn/mdsvex), 然而在使用的時候仍然踩到了一些問題, 寫個簡單的範例紀錄一下, 大部分的問題和解決方法都在 vite.config.js 的註解裡:
 
-👉 <https://github.com/VdustR/example-vite-svelte-markdown>
+👉 [https://github.com/VdustR/example-vite-svelte-markdown](https://github.com/VdustR/example-vite-svelte-markdown)

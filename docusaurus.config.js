@@ -1,6 +1,6 @@
 // @ts-check
 
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+const { themes } = require("prism-react-renderer");
 
 const title = "ViPro's Blog";
 
@@ -12,7 +12,11 @@ const config = {
   baseUrl: "/blog/",
   trailingSlash: true,
   onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: "warn",
+    },
+  },
   favicon: "https://vdustr.github.io/brand/2022-01/favicon.ico",
   i18n: {
     locales: ["zh-Hant"],
@@ -120,7 +124,7 @@ const config = {
         copyright: `Copyright © 2022-${new Date().getFullYear()} VdustR, Inc. Built with Docusaurus.`,
       },
       prism: {
-        darkTheme: darkCodeTheme,
+        darkTheme: themes.dracula,
       },
     }),
   plugins: [

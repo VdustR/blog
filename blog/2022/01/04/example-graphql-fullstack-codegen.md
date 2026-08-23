@@ -28,4 +28,4 @@ tags:
 
 最近試了一下 GraphQL CodeGen 產生 react-query 和 resolver type, node server 可以保證回應的型態正確, react-query functions 更可以直接使用, 真ㄉ 4 超方便的 R~
 
-可以參考這個簡單的範例: <https://github.com/VdustR/example-graphql-fullstack-codegen>
+可以參考這個簡單的範例: [https://github.com/VdustR/example-graphql-fullstack-codegen](https://github.com/VdustR/example-graphql-fullstack-codegen)
