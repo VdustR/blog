@@ -17,8 +17,8 @@
   --sl-color-hairline-light: #e5e7eb;
   --sl-color-hairline: #d9dce2;
   --sl-font:
-    system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang TC",
-    "Microsoft JhengHei", sans-serif;
+    "Glow Sans TC", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "PingFang TC", "Microsoft JhengHei", sans-serif;
   --sl-font-mono:
     "Victor Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
     "PingFang TC", "Microsoft JhengHei", monospace;
@@ -36,7 +36,26 @@ html {
 
 body {
   font-feature-settings: "kern", "palt";
+  font-stretch: condensed;
   background: #fdfdfc;
+}
+
+:where(
+  .desktop-nav a,
+  .hero-copy h1,
+  .hero-slogan,
+  .section-heading h2,
+  .article-grid h3,
+  .sl-markdown-content h2,
+  .sl-markdown-content h3,
+  .main-pane h1#_top,
+  .site-footer p,
+  code,
+  kbd,
+  pre,
+  samp
+) {
+  font-stretch: normal;
 }
 
 ::selection {

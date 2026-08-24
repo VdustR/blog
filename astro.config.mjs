@@ -30,6 +30,20 @@ export default defineConfig({
         },
         {
           tag: "link",
+          attrs: {
+            rel: "stylesheet",
+            href: "https://cdn.jsdelivr.net/npm/@vp-tw/cjk-web-fonts-glow-sans-tc-condensed@0.0.1/dist/Regular/Glow-Sans-TC.css",
+          },
+        },
+        {
+          tag: "link",
+          attrs: {
+            rel: "stylesheet",
+            href: "https://cdn.jsdelivr.net/npm/@vp-tw/cjk-web-fonts-glow-sans-tc-condensed@0.0.1/dist/Bold/Glow-Sans-TC.css",
+          },
+        },
+        {
+          tag: "link",
           attrs: { rel: "preconnect", href: "https://fonts.googleapis.com" },
         },
         {

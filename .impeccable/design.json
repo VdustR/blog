@@ -257,7 +257,7 @@
       "refersTo": "search-control",
       "description": "A compact pill that opens the full Pagefind search experience.",
       "html": "<button class=\"ds-search\" type=\"button\" aria-label=\"搜尋文章\"><svg aria-hidden=\"true\" viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><circle cx=\"11\" cy=\"11\" r=\"7\"/><path d=\"m20 20-4-4\"/></svg><span>搜尋</span></button>",
-      "css": ".ds-search { display: inline-flex; align-items: center; gap: .5rem; padding: .6rem .9rem; border: 1px solid #d9dce2; border-radius: 999px; color: #14161c; background: #fff; font: 400 .9rem/1 system-ui,'PingFang TC','Microsoft JhengHei',sans-serif; cursor: pointer; } .ds-search:hover { border-color: #1545c5; } .ds-search:active { background: #eaf0ff; } .ds-search:focus-visible { outline: 3px solid #1545c5; outline-offset: 4px; }"
+      "css": ".ds-search { display: inline-flex; align-items: center; gap: .5rem; padding: .6rem .9rem; border: 1px solid #d9dce2; border-radius: 999px; color: #14161c; background: #fff; font: 400 .9rem/1 'Glow Sans TC',system-ui,'PingFang TC','Microsoft JhengHei',sans-serif; font-stretch: condensed; cursor: pointer; } .ds-search:hover { border-color: #1545c5; } .ds-search:active { background: #eaf0ff; } .ds-search:focus-visible { outline: 3px solid #1545c5; outline-offset: 4px; }"
     }
   ],
   "narrative": {
@@ -265,7 +265,7 @@
     "overview": "VDUSTR is a light, spacious technical publication where precise engineering notes sit inside an authored editorial setting. HanaMin gives the masthead and headings their distinctive Mincho character; restrained cobalt botanical ink adds a memorable human mark without competing with the archive.\n\nThe system feels polished and publication-led while keeping familiar technical-blog navigation and reading patterns. Content carries authority through typography, whitespace, rules, and real article entries rather than promotional claims.",
     "keyCharacteristics": [
       "Near-white paper, dark ink, and one restrained cobalt accent.",
-      "HanaMin display type paired with a highly readable Traditional Chinese system sans.",
+      "HanaMin display type paired with compact, readable Glow Sans TC Condensed body copy.",
       "Hairline structure, generous whitespace, and flat content surfaces.",
       "Botanical ink artwork is the signature image language; article text remains the proof."
     ],
@@ -282,7 +282,12 @@
       },
       {
         "name": "The Web Font Service Rule",
-        "body": "Production loads the OFL-1.1-licensed HanaMin family from the version-pinned @vp-tw/cjk-web-fonts-hanamin jsDelivr stylesheet. Victor Mono loads through the Google Fonts CSS API with font-display: swap.",
+        "body": "Production loads OFL-1.1-licensed HanaMin and Glow Sans TC Condensed from version-pinned @vp-tw/cjk-web-fonts packages. Load only Glow Sans Regular 400 and Bold 700. Victor Mono loads through the Google Fonts CSS API with font-display: swap.",
+        "section": "typography"
+      },
+      {
+        "name": "The Width Boundary Rule",
+        "body": "Apply condensed width to body and interface copy. Reset HanaMin display text and Victor Mono code to normal width.",
         "section": "typography"
       },
       {

@@ -31,12 +31,12 @@ typography:
     fontWeight: 400
     lineHeight: 1.35
   body:
-    fontFamily: "system-ui, PingFang TC, Microsoft JhengHei, sans-serif"
+    fontFamily: "Glow Sans TC, system-ui, PingFang TC, Microsoft JhengHei, sans-serif"
     fontSize: "1.03rem"
     fontWeight: 400
     lineHeight: 1.85
   label:
-    fontFamily: "system-ui, PingFang TC, Microsoft JhengHei, sans-serif"
+    fontFamily: "Glow Sans TC, system-ui, PingFang TC, Microsoft JhengHei, sans-serif"
     fontSize: "0.78rem"
     fontWeight: 700
     letterSpacing: "0.08em"
@@ -110,11 +110,11 @@ The palette is deliberately narrow: paper and ink establish editorial calm, cool
 
 **Display Font:** HanaMin (with common system sans fallbacks)
 
-**Body Font:** The platform system sans, with PingFang TC and Microsoft JhengHei fallbacks; the site does not load Noto Sans TC.
+**Body Font:** Glow Sans TC Condensed Regular 400, with Bold 700 and platform system sans fallbacks; the site does not load Noto Sans TC.
 
 **Code Font:** Victor Mono (with system monospace and common system CJK fallbacks)
 
-**Character:** HanaMin provides an archival Mincho voice for the identity and hierarchy. The sans-serif body stays neutral and spacious so long-form Traditional Chinese remains comfortable to read; Victor Mono keeps code precise.
+**Character:** HanaMin provides an archival Mincho voice for the identity and hierarchy. Glow Sans TC Condensed keeps long-form Traditional Chinese compact but readable; Victor Mono keeps code precise.
 
 ### Hierarchy
 
@@ -126,7 +126,9 @@ The palette is deliberately narrow: paper and ink establish editorial calm, cool
 
 **The HanaMin Voice Rule.** Use HanaMin for the wordmark, hero statement, navigation, and headings. Do not use it for long paragraphs, metadata, or code.
 
-**The Web Font Service Rule.** Production loads the OFL-1.1-licensed HanaMin family from the version-pinned `@vp-tw/cjk-web-fonts-hanamin` jsDelivr stylesheet. Its Unicode-range subsets share the `HanaMin` family name. Victor Mono loads through the Google Fonts CSS API with `font-display: swap`.
+**The Web Font Service Rule.** Production loads the OFL-1.1-licensed HanaMin and Glow Sans TC Condensed families from version-pinned `@vp-tw/cjk-web-fonts-*` jsDelivr stylesheets. Load only Glow Sans Regular 400 and Bold 700. Victor Mono loads through the Google Fonts CSS API with `font-display: swap`.
+
+**The Width Boundary Rule.** Apply `font-stretch: condensed` to body and interface copy. Reset HanaMin display text and Victor Mono code to `font-stretch: normal`; never synthesize condensed display or code glyphs.
 
 ## Layout
 
