@@ -15,28 +15,28 @@ colors:
   rule-strong: "#d9dce2"
 typography:
   display:
-    fontFamily: "Jigmo, Noto Serif TC, serif"
+    fontFamily: "Jigmo, system-ui, PingFang TC, Microsoft JhengHei, sans-serif"
     fontSize: "clamp(4.5rem, 9vw, 8.25rem)"
     fontWeight: 400
     lineHeight: 0.88
     letterSpacing: "0.08em"
   headline:
-    fontFamily: "Jigmo, Noto Serif TC, serif"
+    fontFamily: "Jigmo, system-ui, PingFang TC, Microsoft JhengHei, sans-serif"
     fontSize: "clamp(2.2rem, 4vw, 3.5rem)"
     fontWeight: 400
     letterSpacing: "0.08em"
   title:
-    fontFamily: "Jigmo, Noto Serif TC, serif"
+    fontFamily: "Jigmo, system-ui, PingFang TC, Microsoft JhengHei, sans-serif"
     fontSize: "1.45rem"
     fontWeight: 400
     lineHeight: 1.35
   body:
-    fontFamily: "Noto Sans TC, PingFang TC, system-ui, sans-serif"
+    fontFamily: "system-ui, PingFang TC, Microsoft JhengHei, sans-serif"
     fontSize: "1.03rem"
     fontWeight: 400
     lineHeight: 1.85
   label:
-    fontFamily: "Noto Sans TC, PingFang TC, system-ui, sans-serif"
+    fontFamily: "system-ui, PingFang TC, Microsoft JhengHei, sans-serif"
     fontSize: "0.78rem"
     fontWeight: 700
     letterSpacing: "0.08em"
@@ -108,9 +108,9 @@ The palette is deliberately narrow: paper and ink establish editorial calm, cool
 
 ## Typography
 
-**Display Font:** Jigmo (with Noto Serif TC and generic serif fallback)
+**Display Font:** Jigmo (with common system sans fallbacks)
 
-**Body Font:** Noto Sans TC (with PingFang TC and system sans fallback)
+**Body Font:** The platform system sans, with PingFang TC and Microsoft JhengHei fallbacks; the site does not load Noto Sans TC.
 
 **Code Font:** Victor Mono (with Jigmo and generic monospace fallback)
 
