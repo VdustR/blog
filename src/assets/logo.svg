@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 56" role="img" aria-labelledby="title">
   <title id="title">VDUSTR</title>
   <g fill="#14161c"><path d="M3 5h46v46H3zm5 5v36h36V10z"/><path d="M9 28h33v4H9zm13-17h4v34h-4z"/><circle cx="39" cy="12" r="3.5"/><circle cx="14" cy="41" r="2.5"/></g>
-  <text x="66" y="39" fill="#14161c" font-family="Jigmo, system-ui, 'PingFang TC', 'Microsoft JhengHei', sans-serif" font-size="29" letter-spacing="3">VDUSTR</text>
+  <text x="66" y="39" fill="#14161c" font-family="HanaMin, system-ui, 'PingFang TC', 'Microsoft JhengHei', sans-serif" font-size="29" letter-spacing="3">VDUSTR</text>
 </svg>

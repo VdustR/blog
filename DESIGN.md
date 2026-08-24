@@ -15,18 +15,18 @@ colors:
   rule-strong: "#d9dce2"
 typography:
   display:
-    fontFamily: "Jigmo, system-ui, PingFang TC, Microsoft JhengHei, sans-serif"
+    fontFamily: "HanaMin, system-ui, PingFang TC, Microsoft JhengHei, sans-serif"
     fontSize: "clamp(4.5rem, 9vw, 8.25rem)"
     fontWeight: 400
     lineHeight: 0.88
     letterSpacing: "0.08em"
   headline:
-    fontFamily: "Jigmo, system-ui, PingFang TC, Microsoft JhengHei, sans-serif"
+    fontFamily: "HanaMin, system-ui, PingFang TC, Microsoft JhengHei, sans-serif"
     fontSize: "clamp(2.2rem, 4vw, 3.5rem)"
     fontWeight: 400
     letterSpacing: "0.08em"
   title:
-    fontFamily: "Jigmo, system-ui, PingFang TC, Microsoft JhengHei, sans-serif"
+    fontFamily: "HanaMin, system-ui, PingFang TC, Microsoft JhengHei, sans-serif"
     fontSize: "1.45rem"
     fontWeight: 400
     lineHeight: 1.35
@@ -41,7 +41,7 @@ typography:
     fontWeight: 700
     letterSpacing: "0.08em"
   mono:
-    fontFamily: "Victor Mono, Jigmo, monospace"
+    fontFamily: "Victor Mono, system monospace, system CJK sans"
 rounded:
   focus: "4px"
   card: "12px"
@@ -74,14 +74,14 @@ components:
 
 **Creative North Star: "The Technical Herbarium"**
 
-VDUSTR is a light, spacious technical publication where precise engineering notes sit inside an authored editorial setting. Jigmo gives the masthead and headings their distinctive ideographic character; restrained cobalt botanical ink adds a memorable human mark without competing with the archive.
+VDUSTR is a light, spacious technical publication where precise engineering notes sit inside an authored editorial setting. HanaMin gives the masthead and headings their distinctive Mincho character; restrained cobalt botanical ink adds a memorable human mark without competing with the archive.
 
 The system feels polished and publication-led while keeping familiar technical-blog navigation and reading patterns. Content carries authority through typography, whitespace, rules, and real article entries rather than promotional claims.
 
 **Key Characteristics:**
 
 - Near-white paper, dark ink, and one restrained cobalt accent.
-- Jigmo display type paired with a highly readable Traditional Chinese system sans.
+- HanaMin display type paired with a highly readable Traditional Chinese system sans.
 - Hairline structure, generous whitespace, and flat content surfaces.
 - Botanical ink artwork is the signature image language; article text remains the proof.
 
@@ -108,13 +108,13 @@ The palette is deliberately narrow: paper and ink establish editorial calm, cool
 
 ## Typography
 
-**Display Font:** Jigmo (with common system sans fallbacks)
+**Display Font:** HanaMin (with common system sans fallbacks)
 
 **Body Font:** The platform system sans, with PingFang TC and Microsoft JhengHei fallbacks; the site does not load Noto Sans TC.
 
-**Code Font:** Victor Mono (with Jigmo and generic monospace fallback)
+**Code Font:** Victor Mono (with system monospace and common system CJK fallbacks)
 
-**Character:** Jigmo provides a constructed, archival voice for the identity and hierarchy. The sans-serif body stays neutral and spacious so long-form Traditional Chinese remains comfortable to read; Victor Mono keeps code precise.
+**Character:** HanaMin provides an archival Mincho voice for the identity and hierarchy. The sans-serif body stays neutral and spacious so long-form Traditional Chinese remains comfortable to read; Victor Mono keeps code precise.
 
 ### Hierarchy
 
@@ -124,9 +124,9 @@ The palette is deliberately narrow: paper and ink establish editorial calm, cool
 - **Body** (`body`): Long-form reading; prose paragraphs and lists stay within 72 characters.
 - **Label** (`label`): Article indices, dates, metadata, and short action cues; use tabular numerals for dates and indices.
 
-**The Jigmo Voice Rule.** Use Jigmo for the wordmark, hero statement, navigation, and headings. Do not use it for long paragraphs, metadata, or Latin code glyphs.
+**The HanaMin Voice Rule.** Use HanaMin for the wordmark, hero statement, navigation, and headings. Do not use it for long paragraphs, metadata, or code.
 
-**The Web Font Service Rule.** Production loads the CC0-licensed Jigmo family from the version-pinned `@vp-tw/cjk-web-fonts-jigmo` jsDelivr stylesheet. Its Unicode-range subsets share the `Jigmo` family name. Victor Mono loads through the Google Fonts CSS API with `font-display: swap`.
+**The Web Font Service Rule.** Production loads the OFL-1.1-licensed HanaMin family from the version-pinned `@vp-tw/cjk-web-fonts-hanamin` jsDelivr stylesheet. Its Unicode-range subsets share the `HanaMin` family name. Victor Mono loads through the Google Fonts CSS API with `font-display: swap`.
 
 ## Layout
 
@@ -164,7 +164,7 @@ The form language is mostly rectilinear and editorial. Article previews and fram
 ### Article Cards
 
 - **Shape:** Restrained 12px corners and a one-pixel cool-gray border.
-- **Content:** Index and up to two tags precede the Jigmo title; summary, date, and arrow follow in a consistent vertical rhythm.
+- **Content:** Index and up to two tags precede the HanaMin title; summary, date, and arrow follow in a consistent vertical rhythm.
 - **State:** Hover raises the card slightly, turns the border cobalt, and introduces only the documented ambient shadow.
 
 ### Archive Rows
@@ -175,13 +175,13 @@ The form language is mostly rectilinear and editorial. Article previews and fram
 
 ### Navigation and Search
 
-- **Navigation:** Jigmo labels sit in a full-width paper header with a hairline divider. Hover and focus reveal a two-pixel cobalt underline.
+- **Navigation:** HanaMin labels sit in a full-width paper header with a hairline divider. Hover and focus reveal a two-pixel cobalt underline.
 - **Search:** Compact white pill with a one-pixel strong rule; preserve full Pagefind behavior and semantic labeling.
 - **Mobile:** Hide desktop links and expose the Starlight menu trigger. Do not reproduce navigation as non-semantic artwork.
 
 ### Article Shell
 
-- **Typography:** Spacious sans-serif prose, Jigmo section headings, and readable Victor Mono code highlighting on the light theme.
+- **Typography:** Spacious sans-serif prose, HanaMin section headings, and readable Victor Mono code highlighting on the light theme.
 - **Metadata:** Date and tags appear before the body using slate and cobalt.
 - **Embeds:** Full width, white, one-pixel bordered, and card-rounded; retain a useful minimum height.
 

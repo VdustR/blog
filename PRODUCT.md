@@ -33,7 +33,7 @@ Readers arrive from search, social sharing, or VdustR's wider personal site. The
 
 ## Brand Commitments
 
-- Use Jigmo as the primary display typeface and let its character inform the identity.
+- Use HanaMin as the primary display typeface and let its character inform the identity.
 - Use the approved light, spacious technical-publication composition in `.impeccable/mocks/decision/canon.webp` as the visual baseline.
 - Keep the identity polished and marketing-aware while embracing familiar technical-blog navigation and content patterns.
 - Existing visual architecture and styling are not binding.

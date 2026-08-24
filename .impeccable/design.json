@@ -235,7 +235,7 @@
       "refersTo": "article-card",
       "description": "A structured preview for a recent article.",
       "html": "<a class=\"ds-article-card\" href=\"#\"><span class=\"ds-card-index\">01</span><span class=\"ds-card-tags\">Astro · CSS</span><h3>文章標題</h3><p>以一段短摘要說明這篇技術筆記處理的問題。</p><time>2026/08/23</time><span class=\"ds-card-arrow\" aria-hidden=\"true\">→</span></a>",
-      "css": ".ds-article-card { min-height: 21rem; display: flex; flex-direction: column; padding: 1.5rem; border: 1px solid #e1e3e8; border-radius: 12px; color: #14161c; background: #fff; text-decoration: none; transition: transform 220ms cubic-bezier(.22,1,.36,1), border-color 220ms ease, box-shadow 220ms ease; } .ds-article-card:hover { transform: translateY(-.35rem); border-color: #1545c5; box-shadow: 0 18px 42px rgba(21,69,197,.09); } .ds-article-card:focus-visible { outline: 3px solid #1545c5; outline-offset: 4px; } .ds-card-index,.ds-card-tags,.ds-card-arrow { color: #1545c5; } .ds-card-index { font-size: .78rem; font-weight: 700; } .ds-card-tags { margin-top: 1rem; font-size: .7rem; } .ds-article-card h3 { margin: .8rem 0 0; font: 400 1.45rem/1.35 Jigmo, system-ui, 'PingFang TC', 'Microsoft JhengHei', sans-serif; } .ds-article-card p { color: #5c6270; font-size: .84rem; line-height: 1.65; } .ds-article-card time { margin-top: auto; color: #686e7b; font-size: .75rem; } .ds-card-arrow { align-self: flex-end; font-size: 1.4rem; }"
+      "css": ".ds-article-card { min-height: 21rem; display: flex; flex-direction: column; padding: 1.5rem; border: 1px solid #e1e3e8; border-radius: 12px; color: #14161c; background: #fff; text-decoration: none; transition: transform 220ms cubic-bezier(.22,1,.36,1), border-color 220ms ease, box-shadow 220ms ease; } .ds-article-card:hover { transform: translateY(-.35rem); border-color: #1545c5; box-shadow: 0 18px 42px rgba(21,69,197,.09); } .ds-article-card:focus-visible { outline: 3px solid #1545c5; outline-offset: 4px; } .ds-card-index,.ds-card-tags,.ds-card-arrow { color: #1545c5; } .ds-card-index { font-size: .78rem; font-weight: 700; } .ds-card-tags { margin-top: 1rem; font-size: .7rem; } .ds-article-card h3 { margin: .8rem 0 0; font: 400 1.45rem/1.35 HanaMin, system-ui, 'PingFang TC', 'Microsoft JhengHei', sans-serif; } .ds-article-card p { color: #5c6270; font-size: .84rem; line-height: 1.65; } .ds-article-card time { margin-top: auto; color: #686e7b; font-size: .75rem; } .ds-card-arrow { align-self: flex-end; font-size: 1.4rem; }"
     },
     {
       "name": "Archive Row",
@@ -247,9 +247,9 @@
     {
       "name": "Primary Navigation Link",
       "kind": "nav",
-      "description": "A restrained Jigmo navigation label with an active cobalt rule.",
+      "description": "A restrained HanaMin navigation label with an active cobalt rule.",
       "html": "<a class=\"ds-nav-link\" href=\"#\">文章</a>",
-      "css": ".ds-nav-link { position: relative; color: #20222a; font-family: Jigmo, system-ui, 'PingFang TC', 'Microsoft JhengHei', sans-serif; font-size: 1.05rem; letter-spacing: .08em; text-decoration: none; } .ds-nav-link::after { content: ''; position: absolute; right: 0; bottom: -.65rem; left: 0; height: 2px; background: #1545c5; transform: scaleX(0); transform-origin: left; transition: transform 180ms cubic-bezier(.22,1,.36,1); } .ds-nav-link:hover::after,.ds-nav-link:focus-visible::after { transform: scaleX(1); } .ds-nav-link:focus-visible { outline: 3px solid #1545c5; outline-offset: 4px; border-radius: 4px; }"
+      "css": ".ds-nav-link { position: relative; color: #20222a; font-family: HanaMin, system-ui, 'PingFang TC', 'Microsoft JhengHei', sans-serif; font-size: 1.05rem; letter-spacing: .08em; text-decoration: none; } .ds-nav-link::after { content: ''; position: absolute; right: 0; bottom: -.65rem; left: 0; height: 2px; background: #1545c5; transform: scaleX(0); transform-origin: left; transition: transform 180ms cubic-bezier(.22,1,.36,1); } .ds-nav-link:hover::after,.ds-nav-link:focus-visible::after { transform: scaleX(1); } .ds-nav-link:focus-visible { outline: 3px solid #1545c5; outline-offset: 4px; border-radius: 4px; }"
     },
     {
       "name": "Search Control",
@@ -262,10 +262,10 @@
   ],
   "narrative": {
     "northStar": "The Technical Herbarium",
-    "overview": "VDUSTR is a light, spacious technical publication where precise engineering notes sit inside an authored editorial setting. Jigmo gives the masthead and headings their distinctive ideographic character; restrained cobalt botanical ink adds a memorable human mark without competing with the archive.\n\nThe system feels polished and publication-led while keeping familiar technical-blog navigation and reading patterns. Content carries authority through typography, whitespace, rules, and real article entries rather than promotional claims.",
+    "overview": "VDUSTR is a light, spacious technical publication where precise engineering notes sit inside an authored editorial setting. HanaMin gives the masthead and headings their distinctive Mincho character; restrained cobalt botanical ink adds a memorable human mark without competing with the archive.\n\nThe system feels polished and publication-led while keeping familiar technical-blog navigation and reading patterns. Content carries authority through typography, whitespace, rules, and real article entries rather than promotional claims.",
     "keyCharacteristics": [
       "Near-white paper, dark ink, and one restrained cobalt accent.",
-      "Jigmo display type paired with a highly readable Traditional Chinese system sans.",
+      "HanaMin display type paired with a highly readable Traditional Chinese system sans.",
       "Hairline structure, generous whitespace, and flat content surfaces.",
       "Botanical ink artwork is the signature image language; article text remains the proof."
     ],
@@ -276,13 +276,13 @@
         "section": "colors"
       },
       {
-        "name": "The Jigmo Voice Rule",
-        "body": "Use Jigmo for the wordmark, hero statement, navigation, and headings. Do not use it for long paragraphs, metadata, or Latin code glyphs.",
+        "name": "The HanaMin Voice Rule",
+        "body": "Use HanaMin for the wordmark, hero statement, navigation, and headings. Do not use it for long paragraphs, metadata, or code.",
         "section": "typography"
       },
       {
         "name": "The Web Font Service Rule",
-        "body": "Production loads the CC0-licensed Jigmo family from the version-pinned @vp-tw/cjk-web-fonts-jigmo jsDelivr stylesheet. Victor Mono loads through the Google Fonts CSS API with font-display: swap.",
+        "body": "Production loads the OFL-1.1-licensed HanaMin family from the version-pinned @vp-tw/cjk-web-fonts-hanamin jsDelivr stylesheet. Victor Mono loads through the Google Fonts CSS API with font-display: swap.",
         "section": "typography"
       },
       {

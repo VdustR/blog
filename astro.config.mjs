@@ -25,7 +25,7 @@ export default defineConfig({
           tag: "link",
           attrs: {
             rel: "stylesheet",
-            href: "https://cdn.jsdelivr.net/npm/@vp-tw/cjk-web-fonts-jigmo@0.0.1/dist/index.css",
+            href: "https://cdn.jsdelivr.net/npm/@vp-tw/cjk-web-fonts-hanamin@0.0.1/dist/index.css",
           },
         },
         {
