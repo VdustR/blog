@@ -185,7 +185,7 @@
       },
       "body": {
         "displayName": "Reading Body",
-        "purpose": "Traditional Chinese long-form prose."
+        "purpose": "Traditional Chinese long-form prose at 1.78 line height, or 1.8 on narrow screens."
       },
       "label": {
         "displayName": "Technical Label",

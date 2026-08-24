@@ -115,6 +115,10 @@ export default defineConfig({
         Footer: "./src/components/Footer.astro",
         ThemeSelect: "./src/components/ThemeSelect.astro",
       },
+      expressiveCode: {
+        themes: ["github-light"],
+        useStarlightUiThemeColors: false,
+      },
       lastUpdated: false,
       pagination: true,
     }),

@@ -34,7 +34,7 @@ typography:
     fontFamily: "Glow Sans TC, system-ui, PingFang TC, Microsoft JhengHei, sans-serif"
     fontSize: "1.03rem"
     fontWeight: 400
-    lineHeight: 1.85
+    lineHeight: 1.78
   label:
     fontFamily: "Glow Sans TC, system-ui, PingFang TC, Microsoft JhengHei, sans-serif"
     fontSize: "0.78rem"
@@ -130,6 +130,8 @@ The palette is deliberately narrow: paper and ink establish editorial calm, cool
 
 **The Width Boundary Rule.** Apply `font-stretch: condensed` to body and interface copy. Reset HanaMin display text and Victor Mono code to `font-stretch: normal`; never synthesize condensed display or code glyphs.
 
+**The Reading Rhythm Rule.** Long-form text uses a 1.78 line height on wide screens and 1.8 on narrow screens. Article titles use balanced wrapping and a smaller mobile scale so HanaMin glyphs retain clear line boxes without clipping.
+
 ## Layout
 
 The homepage uses a centered fluid canvas capped at 92rem, with responsive side padding from 1.25rem to 5.5rem. The hero is an asymmetric two-column split: editorial statement left and transparent botanical illustration right. Article cards form four columns on wide screens, two below 72rem, and one below 50rem. The archive becomes a compact chronological list.
@@ -183,7 +185,8 @@ The form language is mostly rectilinear and editorial. Article previews and fram
 
 ### Article Shell
 
-- **Typography:** Spacious sans-serif prose, HanaMin section headings, and readable Victor Mono code highlighting on the light theme.
+- **Typography:** Spacious sans-serif prose, HanaMin section headings, and Victor Mono with GitHub Light highlighting on a cool paper code surface.
+- **Interaction:** Body links retain a visible underline in every state. All controls provide distinct hover, focus-visible, active, and disabled feedback with a 44px minimum touch target where controls are compact.
 - **Metadata:** Date and tags appear before the body using slate and cobalt.
 - **Embeds:** Full width, white, one-pixel bordered, and card-rounded; retain a useful minimum height.
 
