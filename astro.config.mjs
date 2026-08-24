@@ -12,7 +12,7 @@ export default defineConfig({
       favicon: "/blog/favicon.svg",
       logo: {
         src: "./src/assets/logo.svg",
-        alt: "日花 VDUSTR",
+        alt: "VDUSTR",
         replacesTitle: true,
       },
       customCss: ["./src/styles/global.css"],
@@ -21,6 +21,32 @@ export default defineConfig({
         { icon: "github", label: "GitHub", href: "https://github.com/VdustR" },
       ],
       head: [
+        {
+          tag: "link",
+          attrs: {
+            rel: "stylesheet",
+            href: "https://cdn.jsdelivr.net/npm/@vp-tw/cjk-web-fonts-jigmo@0.0.1/dist/index.css",
+          },
+        },
+        {
+          tag: "link",
+          attrs: { rel: "preconnect", href: "https://fonts.googleapis.com" },
+        },
+        {
+          tag: "link",
+          attrs: {
+            rel: "preconnect",
+            href: "https://fonts.gstatic.com",
+            crossorigin: "anonymous",
+          },
+        },
+        {
+          tag: "link",
+          attrs: {
+            rel: "stylesheet",
+            href: "https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,400..700;1,400..700&display=swap",
+          },
+        },
         { tag: "meta", attrs: { property: "og:site_name", content: "VDUSTR" } },
         {
           tag: "meta",

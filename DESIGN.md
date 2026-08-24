@@ -15,18 +15,18 @@ colors:
   rule-strong: "#d9dce2"
 typography:
   display:
-    fontFamily: "Lithue, Noto Serif TC, serif"
+    fontFamily: "Jigmo, Noto Serif TC, serif"
     fontSize: "clamp(4.5rem, 9vw, 8.25rem)"
     fontWeight: 400
     lineHeight: 0.88
     letterSpacing: "0.08em"
   headline:
-    fontFamily: "Lithue, Noto Serif TC, serif"
+    fontFamily: "Jigmo, Noto Serif TC, serif"
     fontSize: "clamp(2.2rem, 4vw, 3.5rem)"
     fontWeight: 400
     letterSpacing: "0.08em"
   title:
-    fontFamily: "Lithue, Noto Serif TC, serif"
+    fontFamily: "Jigmo, Noto Serif TC, serif"
     fontSize: "1.45rem"
     fontWeight: 400
     lineHeight: 1.35
@@ -41,7 +41,7 @@ typography:
     fontWeight: 700
     letterSpacing: "0.08em"
   mono:
-    fontFamily: "SFMono-Regular, Consolas, monospace"
+    fontFamily: "Victor Mono, Jigmo, monospace"
 rounded:
   focus: "4px"
   card: "12px"
@@ -74,14 +74,14 @@ components:
 
 **Creative North Star: "The Technical Herbarium"**
 
-VDUSTR is a light, spacious technical publication where precise engineering notes sit inside an authored editorial setting. Lithué gives the masthead and headings their distinctive Traditional Chinese character; restrained cobalt botanical ink adds a memorable human mark without competing with the archive.
+VDUSTR is a light, spacious technical publication where precise engineering notes sit inside an authored editorial setting. Jigmo gives the masthead and headings their distinctive ideographic character; restrained cobalt botanical ink adds a memorable human mark without competing with the archive.
 
 The system feels polished and publication-led while keeping familiar technical-blog navigation and reading patterns. Content carries authority through typography, whitespace, rules, and real article entries rather than promotional claims.
 
 **Key Characteristics:**
 
 - Near-white paper, dark ink, and one restrained cobalt accent.
-- Lithué display type paired with a highly readable Traditional Chinese system sans.
+- Jigmo display type paired with a highly readable Traditional Chinese system sans.
 - Hairline structure, generous whitespace, and flat content surfaces.
 - Botanical ink artwork is the signature image language; article text remains the proof.
 
@@ -108,13 +108,13 @@ The palette is deliberately narrow: paper and ink establish editorial calm, cool
 
 ## Typography
 
-**Display Font:** Lithué (with Noto Serif TC and generic serif fallback)
+**Display Font:** Jigmo (with Noto Serif TC and generic serif fallback)
 
 **Body Font:** Noto Sans TC (with PingFang TC and system sans fallback)
 
-**Code Font:** SFMono-Regular (with Consolas and monospace fallback)
+**Code Font:** Victor Mono (with Jigmo and generic monospace fallback)
 
-**Character:** Lithué provides an authored, literary voice for the identity and hierarchy. The sans-serif body stays neutral and spacious so long-form Traditional Chinese and code remain comfortable to read.
+**Character:** Jigmo provides a constructed, archival voice for the identity and hierarchy. The sans-serif body stays neutral and spacious so long-form Traditional Chinese remains comfortable to read; Victor Mono keeps code precise.
 
 ### Hierarchy
 
@@ -124,9 +124,9 @@ The palette is deliberately narrow: paper and ink establish editorial calm, cool
 - **Body** (`body`): Long-form reading; prose paragraphs and lists stay within 72 characters.
 - **Label** (`label`): Article indices, dates, metadata, and short action cues; use tabular numerals for dates and indices.
 
-**The Lithué Voice Rule.** Use Lithué for the wordmark, hero statement, navigation, and headings. Do not use it for long paragraphs, metadata, or code.
+**The Jigmo Voice Rule.** Use Jigmo for the wordmark, hero statement, navigation, and headings. Do not use it for long paragraphs, metadata, or Latin code glyphs.
 
-**The Stable Font Path Rule.** Local Lithué names are development fallbacks only. The later justfont integration must serve or replace `/blog/fonts/lithue.woff2` through a stable production `@font-face` source while preserving the `Lithue` family name and `font-display: swap`.
+**The Web Font Service Rule.** Production loads the CC0-licensed Jigmo family from the version-pinned `@vp-tw/cjk-web-fonts-jigmo` jsDelivr stylesheet. Its Unicode-range subsets share the `Jigmo` family name. Victor Mono loads through the Google Fonts CSS API with `font-display: swap`.
 
 ## Layout
 
@@ -164,7 +164,7 @@ The form language is mostly rectilinear and editorial. Article previews and fram
 ### Article Cards
 
 - **Shape:** Restrained 12px corners and a one-pixel cool-gray border.
-- **Content:** Index and up to two tags precede the Lithué title; summary, date, and arrow follow in a consistent vertical rhythm.
+- **Content:** Index and up to two tags precede the Jigmo title; summary, date, and arrow follow in a consistent vertical rhythm.
 - **State:** Hover raises the card slightly, turns the border cobalt, and introduces only the documented ambient shadow.
 
 ### Archive Rows
@@ -175,13 +175,13 @@ The form language is mostly rectilinear and editorial. Article previews and fram
 
 ### Navigation and Search
 
-- **Navigation:** Lithué labels sit in a full-width paper header with a hairline divider. Hover and focus reveal a two-pixel cobalt underline.
+- **Navigation:** Jigmo labels sit in a full-width paper header with a hairline divider. Hover and focus reveal a two-pixel cobalt underline.
 - **Search:** Compact white pill with a one-pixel strong rule; preserve full Pagefind behavior and semantic labeling.
 - **Mobile:** Hide desktop links and expose the Starlight menu trigger. Do not reproduce navigation as non-semantic artwork.
 
 ### Article Shell
 
-- **Typography:** Spacious sans-serif prose, Lithué section headings, and readable code highlighting on the light theme.
+- **Typography:** Spacious sans-serif prose, Jigmo section headings, and readable Victor Mono code highlighting on the light theme.
 - **Metadata:** Date and tags appear before the body using slate and cobalt.
 - **Embeds:** Full width, white, one-pixel bordered, and card-rounded; retain a useful minimum height.
 
