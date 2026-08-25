@@ -6,6 +6,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
+    "verify:output": "node scripts/check-built-links.mjs",
     "preview": "astro preview",
     "audit": "pnpm audit --prod",
     "format": "oxfmt --write .",

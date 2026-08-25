@@ -11,12 +11,12 @@ export async function GET(context) {
   return rss({
     title: "VDUSTR",
     description: "寫給仍在動手的人。技術筆記、實驗與程式碼。",
-    site: context.site,
+    site: new URL(import.meta.env.BASE_URL, context.site),
     items: posts.map((post) => ({
       title: post.data.title,
       description: post.data.description,
       pubDate: post.data.publishDate,
-      link: `/${post.id}/`,
+      link: `${post.id}/`,
     })),
     customData: "<language>zh-Hant</language>",
   });

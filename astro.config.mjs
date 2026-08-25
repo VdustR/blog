@@ -9,7 +9,7 @@ export default defineConfig({
     starlight({
       title: "VDUSTR",
       description: "寫給仍在動手的人。技術筆記、實驗與程式碼。",
-      favicon: "/blog/assets-2026/vdustr/brand/favicon-32.png",
+      favicon: "/assets-2026/vdustr/brand/favicon-32.png",
       customCss: ["./src/styles/global.css"],
       locales: { root: { label: "繁體中文", lang: "zh-TW" } },
       social: [

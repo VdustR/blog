@@ -36,6 +36,8 @@ jobs:
         uses: actions/configure-pages@v6
       - name: Build
         run: pnpm run build
+      - name: Verify production output
+        run: pnpm run verify:output
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v5
         with:
