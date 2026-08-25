@@ -1,0 +1,18 @@
+{
+  "useCase": "logo-brand",
+  "source": "OpenAI built-in image generation",
+  "prompt": "Create a refined emblem for VDUSTR: an abstract uppercase V formed by two confident botanical brush strokes, the left stroke in editorial charcoal ink and the right stroke in botanical cobalt, with one small cobalt leaf growing from the upper-right stroke. Render one isolated centered mark on a uniform chroma-key magenta background. Avoid frames, badges, code symbols, lettering, mockups, shadows, glow, blur, gradients, 3D, and watermarks.",
+  "allowedProcessing": [
+    "background removal with alpha-aware color despill",
+    "transparent crop and padding",
+    "proportional resize from the master",
+    "lossless PNG conversion"
+  ],
+  "prohibitedProcessing": [
+    "SVG tracing or conversion",
+    "manual redraw",
+    "non-proportional scaling",
+    "repeated resampling",
+    "edge blur or sharpening halos"
+  ]
+}

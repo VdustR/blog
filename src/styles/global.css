@@ -107,12 +107,24 @@ a {
 
 .header-brand a {
   display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #14161c;
+  text-decoration: none;
   border-radius: 4px;
 }
 
 .header-brand img {
-  width: 11.75rem;
+  width: 3.5rem;
   height: 3.5rem;
+}
+
+.header-brand span {
+  font-family: "HanaMin", "Songti TC", "PMingLiU", "Times New Roman", serif;
+  font-size: 1.8rem;
+  font-stretch: normal;
+  letter-spacing: 0.14em;
+  line-height: 1;
 }
 
 .desktop-nav {
@@ -679,7 +691,12 @@ a {
   }
 
   .header-brand img {
-    width: 9rem;
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+
+  .header-brand span {
+    font-size: 1.35rem;
   }
 
   .header-tools > :last-child {

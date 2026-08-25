@@ -85,6 +85,17 @@ The system feels polished and publication-led while keeping familiar technical-b
 - Hairline structure, generous whitespace, and flat content surfaces.
 - Botanical ink artwork is the signature image language; article text remains the proof.
 
+## Identity
+
+The VDUSTR mark is a precise four-corner editorial frame interrupted by a cobalt sprout. The frame represents durable technical structure; the sprout represents experiments that remain alive and revisable. The asymmetric leaf prevents the mark from reading as a generic scanner or developer glyph.
+
+- **Mark:** Use the generated transparent PNG master or its proportional raster exports. Never trace or redraw it as SVG.
+- **Favicon:** Use the transparent uncontained mark.
+- **App icon:** Use the same transparent mark, resized directly from the master.
+- **HTML logo:** Pair the mark with live `VDUSTR` text in HanaMin. Do not bake the wordmark into an image.
+- **Minimum size:** 16px for the favicon mark; 44px for interactive header use.
+- **Processing:** Generate on a high-contrast chroma background, remove it with alpha-aware color despill, then crop and resize directly from the master. Avoid colored fringes, matte residue, blur, sharpening halos, and repeated resampling.
+
 ## Colors
 
 The palette is deliberately narrow: paper and ink establish editorial calm, cool grays organize information, and cobalt identifies actions and active state.

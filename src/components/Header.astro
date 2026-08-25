@@ -1,7 +1,6 @@
 ---
 import Search from "@astrojs/starlight/components/Search.astro";
 import SocialIcons from "@astrojs/starlight/components/SocialIcons.astro";
-import logo from "../assets/logo.svg";
 
 const base = import.meta.env.BASE_URL;
 const links = [
@@ -15,7 +14,10 @@ const links = [
 
 <header class="site-header">
   <div class="header-brand">
-    <a href={base} aria-label="VDUSTR 首頁"><img src={logo.src} width="264" height="56" alt="VDUSTR" /></a>
+    <a href={base} aria-label="VDUSTR 首頁">
+      <img src={`${base}assets-2026/vdustr/brand/logo-mark-64.png`} width="64" height="64" alt="" />
+      <span>VDUSTR</span>
+    </a>
   </div>
   <nav class="desktop-nav" aria-label="主要導覽">
     {links.map((link) => <a href={link.href}>{link.label}</a>)}

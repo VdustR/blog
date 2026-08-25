@@ -9,18 +9,21 @@ export default defineConfig({
     starlight({
       title: "VDUSTR",
       description: "寫給仍在動手的人。技術筆記、實驗與程式碼。",
-      favicon: "/blog/favicon.svg",
-      logo: {
-        src: "./src/assets/logo.svg",
-        alt: "VDUSTR",
-        replacesTitle: true,
-      },
+      favicon: "/blog/assets-2026/vdustr/brand/favicon-32.png",
       customCss: ["./src/styles/global.css"],
       locales: { root: { label: "繁體中文", lang: "zh-TW" } },
       social: [
         { icon: "github", label: "GitHub", href: "https://github.com/VdustR" },
       ],
       head: [
+        {
+          tag: "link",
+          attrs: {
+            rel: "apple-touch-icon",
+            sizes: "180x180",
+            href: "/blog/assets-2026/vdustr/brand/app-icon-180.png",
+          },
+        },
         {
           tag: "link",
           attrs: {
@@ -66,7 +69,8 @@ export default defineConfig({
           tag: "meta",
           attrs: {
             property: "og:image",
-            content: "https://vdustr.github.io/blog/og-image.png",
+            content:
+              "https://vdustr.github.io/blog/assets-2026/vdustr/site/og-image.png",
           },
         },
         {
