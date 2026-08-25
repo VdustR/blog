@@ -10,7 +10,7 @@ export async function GET(context) {
 
   return rss({
     title: "VDUSTR",
-    description: "寫給仍在動手的人。技術筆記、實驗與程式碼。",
+    description: "一些雜七雜八的隨手筆記。",
     site: new URL(import.meta.env.BASE_URL, context.site),
     items: posts.map((post) => ({
       title: post.data.title,

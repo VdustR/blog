@@ -8,19 +8,19 @@ web
 
 ## Users
 
-The primary audience is readers of Traditional Chinese technical writing. The site may also be evaluated by potential collaborators or employers. The exact priority between these audiences remains to be confirmed.
+The primary audience is readers interested in VdustR's miscellaneous Traditional Chinese notes. Technical writing remains part of the archive but does not define the publication's future scope.
 
 ## Product Purpose
 
-This is VdustR's personal blog. It publishes durable technical notes, experiments, and implementation reflections. A successful visit leads a reader from a distinctive first impression into an article that is comfortable to read and easy to navigate.
+This is VdustR's personal blog for miscellaneous notes written as ideas arise. A successful visit leads a reader from a distinctive first impression into an article that is comfortable to read and easy to navigate.
 
 ## Positioning
 
-The blog combines hands-on engineering experiments with a personal editorial voice. Its archive is the primary proof; no commercial or professional claims should be invented.
+The blog combines informal personal notes with an authored editorial setting. Its existing technical archive remains available, but future writing is not constrained to technology.
 
 ## Operating Context
 
-Readers arrive from search, social sharing, or VdustR's wider personal site. They browse the archive, search for a technical topic, read long-form Markdown or MDX articles, follow code examples, and continue to related external links.
+Readers arrive from search, social sharing, or VdustR's wider personal site. They browse the archive, read Markdown or MDX articles across changing subjects, and continue to related links.
 
 ## Capabilities and Constraints
 
@@ -34,8 +34,8 @@ Readers arrive from search, social sharing, or VdustR's wider personal site. The
 ## Brand Commitments
 
 - Use HanaMin as the primary display typeface and let its character inform the identity.
-- Use the approved light, spacious technical-publication composition in `.impeccable/mocks/decision/canon.webp` as the visual baseline.
-- Keep the identity polished and marketing-aware while embracing familiar technical-blog navigation and content patterns.
+- Use the approved light, spacious personal-publication composition in `.impeccable/mocks/decision/canon.webp` as the visual baseline.
+- Keep the identity polished and marketing-aware while embracing familiar personal-publication navigation and content patterns.
 - Existing visual architecture and styling are not binding.
 - The product name, slogan, logo, and other non-article copy may be replaced.
 
@@ -48,8 +48,8 @@ Readers arrive from search, social sharing, or VdustR's wider personal site. The
 
 ## Product Principles
 
-- Make the writing the strongest proof of expertise.
-- Give technical content an authored editorial setting.
+- Let the writing express the author's changing interests and point of view.
+- Give miscellaneous personal writing an authored editorial setting.
 - Preserve stable links and content behavior during the migration.
 - Make discovery, reading, and continuing to another article effortless.
 - Keep factual claims grounded in repository content.
