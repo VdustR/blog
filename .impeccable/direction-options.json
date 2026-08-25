@@ -1,0 +1,149 @@
+{
+  "title": "選擇 VdustR 新網誌的視覺世界",
+  "question": "每個方向都以 Lithué 為主角。選一個作為 Astro Starlight 全站重新設計的基礎，或要求重新抽選。",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "校色台上的技術刊物",
+      "kicker": "THE ROLL",
+      "lineage": "印刷廠校色稿、套印標記與文化刊物清樣",
+      "thesis": "把每篇技術文章做成仍帶著裁切線與校色痕跡的獨立刊物。",
+      "palette": ["#f3ecdc", "#13120f", "#ed522f", "#2b6df6", "#f2c84b"],
+      "materials": ["未塗佈紙", "套印色版", "裁切線", "編輯鉛筆記號"],
+      "viewport": "第一屏是一張超尺度的刊物清樣；Lithué 標題跨過欄線，最新文章像剛從印刷機送出的封面主題，文章索引沿著校色帶進場。",
+      "risk": "套印語彙若只剩裝飾，會失去刊物的結構力量。",
+      "raised": [
+        {
+          "from": "機場導引系統",
+          "raise": "每一個導覽決策都只保留一個清楚下一步。"
+        },
+        {
+          "from": "Data Sublime",
+          "raise": "技術資料與標籤必須形成真正的資訊密度，而非背景花紋。"
+        },
+        {
+          "from": "剪接工作台",
+          "raise": "文章歸檔保留可感知的時間順序與停留位置。"
+        },
+        {
+          "from": "抽繩斗篷",
+          "raise": "響應式版面要重新編排材料，不只是縮小桌面構圖。"
+        },
+        {
+          "from": "來源履歷絲帶",
+          "raise": "文章日期與主題在整個閱讀路徑中維持連續。"
+        }
+      ],
+      "comp": ".impeccable/mocks/decision/assigned.webp"
+    },
+    {
+      "id": "model-pick",
+      "label": "獨立文化季刊",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "台灣獨立文化雜誌、專題封面與編輯手記",
+      "thesis": "把個人技術網誌當成一期持續更新、可被收藏的文化季刊。",
+      "palette": ["#eee7d4", "#181714", "#c73d2d", "#789c72"],
+      "materials": ["米色刊物紙", "雙色印刷", "跨頁標題", "頁碼與眉題"],
+      "viewport": "首頁像當期封面與目錄的混合頁；Lithué 形成強勢刊名，最新文章是封面故事，其他文章依欄位和期別展開。",
+      "risk": "這是最熟悉、也最容易落入一般 editorial portfolio 的方向。",
+      "comp": ".impeccable/mocks/decision/model-pick.webp"
+    },
+    {
+      "id": "challenger-airport",
+      "label": "前往下一篇",
+      "verdict": "competitive",
+      "lineage": "國際機場的黃色導引系統",
+      "thesis": "把文章探索變成一連串明確轉乘，每個畫面只回答下一步往哪裡。",
+      "palette": ["#f4c900", "#111111", "#ffffff"],
+      "materials": ["懸掛式方向牌", "黑底象形符號", "大型路徑編號"],
+      "viewport": "巨大的 Lithué 刊名像航廈目的地，最新文章與主題被標成可立即前往的登機口。",
+      "case": "產品清晰度極高，但工程讀者與個人刊物的認同感弱於印刷清樣。",
+      "risk": "黃色導引若沒有精準資訊架構，容易像活動視覺。",
+      "comp": ".impeccable/mocks/decision/challenger-airport.webp",
+      "hero": "https://impeccable.style/worlds/cards/wayfinding-cartography-signage-terminal-yellow-wayfinding-hero.webp"
+    },
+    {
+      "id": "challenger-data",
+      "label": "資料脈衝",
+      "verdict": "competitive",
+      "lineage": "Ryoji Ikeda 式 data-sublime 視覺場",
+      "thesis": "把程式碼、日期與標籤轉成黑白資料場，文章從訊號中被讀取。",
+      "palette": ["#000000", "#ffffff"],
+      "materials": ["條碼列", "正弦格網", "像素級細線", "數字欄"],
+      "viewport": "Lithué 標題切開高速資料場，文章索引像訊號讀值，滑動時只做一次受控反相。",
+      "case": "工程讀者辨識度很高，但長篇繁體中文閱讀的溫度與舒適度較弱。",
+      "risk": "若動效失控，會損害閱讀、效能與無障礙。",
+      "comp": ".impeccable/mocks/decision/challenger-data.webp",
+      "hero": "https://impeccable.style/worlds/cards/ikeda-datamatics-hero.webp"
+    },
+    {
+      "id": "challenger-provenance",
+      "label": "文章的紅線",
+      "verdict": "competitive",
+      "lineage": "博物館藏品來源履歷與展覽圖錄",
+      "thesis": "讓一條紅色時間線穿過文章、實驗與修正，形成可追索的個人技術史。",
+      "palette": ["#e8dec9", "#252019", "#b52c2b", "#8f887c"],
+      "materials": ["檔案紙", "紅色織帶", "褪色日期戳", "鉛字註記"],
+      "viewport": "紅線從巨大的 Lithué 刊名展開，穿過最新文章與歷年索引，日期成為主要導覽。",
+      "case": "時間結構與文章閱讀都很清楚，但容易把活躍網誌做成靜態回顧展。",
+      "risk": "過度強調年代會削弱新文章的當下感。",
+      "comp": ".impeccable/mocks/decision/challenger-provenance.webp",
+      "hero": "https://impeccable.style/worlds/cards/exhibition-museum-curation-provenance-ribbon-hero.webp"
+    },
+    {
+      "id": "challenger-laban",
+      "label": "垂直閱讀譜",
+      "verdict": "declined",
+      "lineage": "Labanotation 舞蹈記譜法",
+      "thesis": "文章在中央時間軸兩側以閱讀動作被編排。",
+      "palette": ["#f8f7f2", "#111111", "#d8d5cb"],
+      "materials": ["記譜紙", "實心符塊", "中線節拍"],
+      "viewport": "文章沿中央譜線向上展開。",
+      "case": "記譜法對技術網誌的辨識與內容清晰度都不足。",
+      "risk": "陌生符號會讓文章探索需要額外學習。",
+      "kept": "用版面節奏表達閱讀進程，而不是堆疊卡片。",
+      "hero": "https://impeccable.style/worlds/cards/notation-diagram-systems-labanotation-hero.webp"
+    },
+    {
+      "id": "challenger-cutting",
+      "label": "剪接工作台",
+      "verdict": "declined",
+      "lineage": "電影剪接檯與齒孔工作拷貝",
+      "thesis": "文章像依時間掛在剪接軌上的片段。",
+      "palette": ["#080706", "#e25b25", "#f1eadc"],
+      "materials": ["粗粒膠片", "齒孔", "油性筆叉號", "摺疊膠帶旗"],
+      "viewport": "最新文章停在一格被標記的工作拷貝。",
+      "case": "時間序列有趣，但橫向剪接不利於一般文章瀏覽與閱讀。",
+      "risk": "互動成本可能高於讀者得到的價值。",
+      "kept": "清楚標示讀者上次停留的位置。",
+      "hero": "https://impeccable.style/worlds/cards/operate-a-cutting-bench-select-rail-hero.webp"
+    },
+    {
+      "id": "challenger-cape",
+      "label": "抽繩頁面",
+      "verdict": "declined",
+      "lineage": "具有抽繩通道的變形絲質斗篷",
+      "thesis": "版面隨著導覽收束、聚攏，再展開成文章。",
+      "palette": ["#0d0d0d", "#c5a34b", "#53565d"],
+      "materials": ["霧黑絲料", "金色抽繩", "通道縫線"],
+      "viewport": "一條金線拉開 Lithué 刊名與文章輪廓。",
+      "case": "形式缺乏技術文章與個人出版的直接辨識。",
+      "risk": "材質模擬可能喧賓奪主。",
+      "kept": "手機版應重新塑形，而不是壓縮桌面版。",
+      "hero": "https://impeccable.style/worlds/cards/textiles-weave-drape-fashion-drawcord-transforming-cape-hero.webp"
+    }
+  ],
+  "reroll": { "registers": ["safer", "bolder"] },
+  "buildPath": { "value": "comp", "toggle": true },
+  "canon": true,
+  "canonCard": {
+    "label": "精緻但標準的技術網誌",
+    "thesis": "以成熟的文件站配置、文章卡片和乾淨閱讀欄完成高品質技術網誌。",
+    "palette": ["#ffffff", "#15171a", "#4b67e8"],
+    "materials": ["乾淨格線", "輕量卡片", "柔和程式碼區塊"],
+    "viewport": "標準導覽、簡潔 hero、最新文章卡片與文章側欄。",
+    "risk": "清楚可靠，但難以建立 VdustR 自己的視覺記憶。",
+    "comp": ".impeccable/mocks/decision/canon.webp"
+  },
+  "steer": true
+}

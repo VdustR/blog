@@ -1,0 +1,71 @@
+---
+import { getCollection } from "astro:content";
+
+const posts = (await getCollection("docs"))
+  .filter((post) => post.id !== "index" && post.data.publishDate)
+  .toSorted((a, b) => b.data.publishDate!.getTime() - a.data.publishDate!.getTime());
+
+const recentPosts = posts.slice(0, 4);
+const archivePosts = posts.slice(4);
+const base = import.meta.env.BASE_URL;
+const postUrl = (id: string) => `${base}${id.replace(/\.(md|mdx)$/, "")}/`;
+const formatDate = (date: Date) =>
+  new Intl.DateTimeFormat("zh-Hant", { year: "numeric", month: "2-digit", day: "2-digit" }).format(date);
+---
+
+<main class="blog-home">
+  <section class="home-hero" aria-labelledby="_top">
+    <div class="hero-copy">
+      <h1 id="_top">VDUSTR</h1>
+      <p class="hero-slogan">寫給仍在動手的人</p>
+      <p class="hero-deck">Notes / Experiments / Code</p>
+      <a class="hero-action" href={postUrl(recentPosts[0].id)}>
+        <span>最新文章</span>
+        <strong>{recentPosts[0].data.title}</strong>
+        <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <img src={`${base}assets-2026/vdustr/site/hero-botanical.webp`} alt="" width="1466" height="1073" loading="eager" fetchpriority="high" />
+    </div>
+  </section>
+
+  <section class="latest" aria-labelledby="latest-title">
+    <div class="section-heading">
+      <h2 id="latest-title">最近發表</h2>
+      <a href="#archive">查看全部 {posts.length} 篇文章</a>
+    </div>
+    <ol class="article-grid">
+      {recentPosts.map((post, index) => (
+        <li>
+          <a href={postUrl(post.id)}>
+            <span class="article-index" aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>
+            <div class="article-tags">{post.data.tags.slice(0, 2).map((tag) => <span>{tag}</span>)}</div>
+            <h3>{post.data.title}</h3>
+            <p>{post.data.description}</p>
+            <time datetime={post.data.publishDate!.toISOString()}>{formatDate(post.data.publishDate!)}</time>
+            <span class="article-arrow" aria-hidden="true">→</span>
+          </a>
+        </li>
+      ))}
+    </ol>
+  </section>
+
+  <section class="archive" id="archive" aria-labelledby="archive-title">
+    <div class="section-heading">
+      <h2 id="archive-title">文章索引</h2>
+      <p>從最近的實驗，讀回仍然有用的技術決策。</p>
+    </div>
+    <ol>
+      {archivePosts.map((post) => (
+        <li>
+          <a href={postUrl(post.id)}>
+            <time datetime={post.data.publishDate!.toISOString()}>{formatDate(post.data.publishDate!)}</time>
+            <span>{post.data.title}</span>
+            <span class="archive-arrow" aria-hidden="true">↗</span>
+          </a>
+        </li>
+      ))}
+    </ol>
+  </section>
+</main>

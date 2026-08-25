@@ -1,0 +1,16 @@
+---
+import DefaultFooter from "@astrojs/starlight/components/Footer.astro";
+const year = new Date().getFullYear();
+---
+
+<DefaultFooter />
+<footer class="site-footer">
+  <p>VDUSTR — 寫給仍在動手的人</p>
+  <nav aria-label="頁尾導覽">
+    <a href="https://github.com/VdustR">GitHub</a>
+    <a href="https://vdustr.github.io/links">Links</a>
+    <a href="https://vdustr.github.io/projects">Projects</a>
+    <a href="https://vdustr.github.io">About</a>
+  </nav>
+  <small>© 2021–{year} VdustR. Content licensed under CC BY-SA 4.0.</small>
+</footer>
