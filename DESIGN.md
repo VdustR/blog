@@ -1,6 +1,6 @@
 ---
 name: VDUSTR
-description: A light, spacious technical publication for durable notes, experiments, and code.
+description: A light, spacious personal publication for miscellaneous notes.
 colors:
   cobalt: "#1545c5"
   cobalt-soft: "#eaf0ff"
@@ -72,11 +72,11 @@ components:
 
 ## Overview
 
-**Creative North Star: "The Technical Herbarium"**
+**Creative North Star: "The Personal Herbarium"**
 
-VDUSTR is a light, spacious technical publication where precise engineering notes sit inside an authored editorial setting. HanaMin gives the masthead and headings their distinctive Mincho character; restrained cobalt botanical ink adds a memorable human mark without competing with the archive.
+VDUSTR is a light, spacious personal publication for miscellaneous notes written as ideas arise. HanaMin gives the masthead and headings their distinctive Mincho character; restrained cobalt botanical ink adds a memorable human mark without competing with the archive.
 
-The system feels polished and publication-led while keeping familiar technical-blog navigation and reading patterns. Content carries authority through typography, whitespace, rules, and real article entries rather than promotional claims.
+The system feels polished and publication-led while keeping familiar personal-blog navigation and reading patterns. Content carries character through typography, whitespace, rules, and real article entries rather than promotional claims.
 
 **Key Characteristics:**
 
@@ -87,7 +87,7 @@ The system feels polished and publication-led while keeping familiar technical-b
 
 ## Identity
 
-The VDUSTR mark is a precise four-corner editorial frame interrupted by a cobalt sprout. The frame represents durable technical structure; the sprout represents experiments that remain alive and revisable. The asymmetric leaf prevents the mark from reading as a generic scanner or developer glyph.
+The VDUSTR mark is a precise four-corner editorial frame interrupted by a cobalt sprout. The frame represents the structure of a personal archive; the sprout represents thoughts that remain alive and revisable. The asymmetric leaf prevents the mark from reading as a generic scanner or developer glyph.
 
 - **Mark:** Use the generated transparent PNG master or its proportional raster exports. Never trace or redraw it as SVG.
 - **Favicon:** Use the transparent uncontained mark.

@@ -17,8 +17,8 @@ const formatDate = (date: Date) =>
   <section class="home-hero" aria-labelledby="_top">
     <div class="hero-copy">
       <h1 id="_top">VDUSTR</h1>
-      <p class="hero-slogan">寫給仍在動手的人</p>
-      <p class="hero-deck">Notes / Experiments / Code</p>
+      <p class="hero-slogan">一些雜七雜八的隨手筆記</p>
+      <p class="hero-deck">Notes / Things / Etc.</p>
       <a class="hero-action" href={postUrl(recentPosts[0].id)}>
         <span>最新文章</span>
         <strong>{recentPosts[0].data.title}</strong>
@@ -54,7 +54,7 @@ const formatDate = (date: Date) =>
   <section class="archive" id="archive" aria-labelledby="archive-title">
     <div class="section-heading">
       <h2 id="archive-title">文章索引</h2>
-      <p>從最近的實驗，讀回仍然有用的技術決策。</p>
+      <p>最近寫下的，和之前沒整理好的，都放在這裡。</p>
     </div>
     <ol>
       {archivePosts.map((post) => (

@@ -8,7 +8,7 @@ export default defineConfig({
   integrations: [
     starlight({
       title: "VDUSTR",
-      description: "寫給仍在動手的人。技術筆記、實驗與程式碼。",
+      description: "一些雜七雜八的隨手筆記。",
       favicon: "/assets-2026/vdustr/brand/favicon-32.png",
       customCss: ["./src/styles/global.css"],
       locales: { root: { label: "繁體中文", lang: "zh-TW" } },
