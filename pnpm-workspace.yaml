@@ -1,3 +1,6 @@
 allowBuilds:
   core-js: true
   esbuild: true
+overrides:
+  # Keep the nesting plugin while using the parser's linear-time security fix.
+  postcss-nested>postcss-selector-parser: 7.1.6
