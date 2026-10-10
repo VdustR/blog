@@ -14,6 +14,7 @@
     "lint": "oxlint . --deny-warnings",
     "lint:fix": "oxlint . --fix --deny-warnings",
     "security:check": "pnpm run audit",
+    "test:dev-security": "node --test scripts/check-dev-security.test.mjs",
     "typecheck": "astro check"
   },
   "dependencies": {

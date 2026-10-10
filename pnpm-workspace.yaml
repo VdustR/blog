@@ -2,5 +2,7 @@ allowBuilds:
   core-js: true
   esbuild: true
 overrides:
+  # oxfmt pins an older worker pool; keep its API and ignore inherited options.
+  oxfmt>tinypool: 2.1.2
   # Keep the nesting plugin while using the parser's linear-time security fix.
   postcss-nested>postcss-selector-parser: 7.1.6
