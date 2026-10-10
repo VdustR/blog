@@ -1,3 +1,4 @@
+/* eslint-disable no-extend-native -- Simulate the upstream pollution precondition; restore every property in finally. */
 import assert from "node:assert/strict";
 import { createRequire } from "node:module";
 import { resolve } from "node:path";
