@@ -32,6 +32,8 @@ jobs:
         run: pnpm run typecheck
       - name: Security check
         run: pnpm run security:check
+      - name: Development dependency security fixtures
+        run: pnpm run test:dev-security
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v6
       - name: Build
