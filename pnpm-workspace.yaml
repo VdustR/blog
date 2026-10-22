@@ -2,6 +2,8 @@ allowBuilds:
   core-js: true
   esbuild: true
 overrides:
+  # Patch Astro's bundled editor integration within its supported Vite range.
+  astro>vite: 8.2.4
   # oxfmt pins an older worker pool; keep its API and ignore inherited options.
   oxfmt>tinypool: 2.1.2
   # Keep the nesting plugin while using the parser's linear-time security fix.
