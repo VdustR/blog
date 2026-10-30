@@ -17,14 +17,15 @@ async function installed(...chain) {
 }
 
 const { default: Tinypool } = await installed("oxfmt", "tinypool");
-const { default: uri } = await installed(
+const ajvChain = [
   "@astrojs/check",
   "@astrojs/language-server",
   "volar-service-yaml",
   "yaml-language-server",
   "ajv",
-  "fast-uri",
-);
+];
+const { default: Ajv } = await installed(...ajvChain);
+const { default: uri } = await installed(...ajvChain, "fast-uri");
 const filename = resolve("scripts/fixtures/security-worker.mjs");
 
 test("worker construction ignores inherited execArgv and env", async () => {
@@ -97,4 +98,35 @@ test("URI serialization rejects authority injection and preserves valid ports", 
   );
   assert.equal(uri.normalize("//%41.com"), "//a.com");
   assert.equal(uri.equal("//%41.com/Path", "//a.com/path"), false);
+});
+
+test("Ajv resolves relative schema references and rejects invalid data", () => {
+  const ajv = new Ajv();
+  ajv.addSchema({
+    $id: "https://example.com/schemas/definitions/title.json",
+    type: "string",
+  });
+  const validate = ajv.compile({
+    $id: "https://example.com/schemas/post.json",
+    type: "object",
+    properties: { title: { $ref: "definitions/title.json" } },
+    required: ["title"],
+  });
+
+  assert.equal(validate({ title: "A post" }), true);
+  assert.equal(validate({ title: 42 }), false);
+  assert.equal(validate.errors[0].keyword, "type");
+  assert.equal(validate.errors[0].instancePath, "/title");
+});
+
+test("Ajv keeps unresolved schema references observable", () => {
+  const ajv = new Ajv();
+  assert.throws(
+    () =>
+      ajv.compile({
+        $id: "https://example.com/schemas/post.json",
+        $ref: "missing.json",
+      }),
+    (error) => error.missingRef === "https://example.com/schemas/missing.json",
+  );
 });
